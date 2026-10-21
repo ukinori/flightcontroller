@@ -1,70 +1,64 @@
-# Питание flightcontroller — 12.10.2026
+# Flight-controller power design
 
-Обновлён узел внутреннего питания 5 В → 3,3 В. Внешний преобразователь батареи 6–12S → стабилизированные 5 В разрабатывается отдельно; аккумулятор напрямую к J4 подключать нельзя. Эта записка заменяет предыдущую версию POWER-NOTES-RU.md.
+English edition of the selection record dated 2026-10-12. The legacy filename is retained for links. The onboard circuit converts regulated 5 V to 3.3 V. A separate external converter is required between the intended 6–12S battery and J4. Never connect raw battery voltage to J4.
 
-## Изменения
+## Selected circuit
 
-- U8: TPS62162DSGR, фиксированные 3,3 В, номинальный выходной ток 1 А, вход 3–17 В. Корпус WSON-8 с тепловой площадкой; добавлен локальный символ FlightController:TPS62162DSG.
-- L1: 3,3 мкГн, Coilcraft XAL4030-332MEC. Посадочное место L_Coilcraft_XAL4030-XXX.
-- C34 и C42: по 10 мкФ / 25 В, X7R, ±10%, 1206, Murata GRM31CR71E106KA12L; соединены параллельно. C31 и C33: 100 нФ / 25 В, X7R, ±10%, 0603, Murata GRM188R71E104KA01D.
-- C32: 22 мкФ / 10 В, X7R, ±10%, 1206, Murata GRM31CR71A226KE15L. Конкретные артикулы выбраны; требуется проверка готовой платы.
-- D3: однонаправленный SMBJ5.0A-E3/52, SMB; катод к PWR_IN, анод к GND. Защищает от ограниченных по энергии импульсов. Не защищает от длительной неисправности внешнего buck или прямого подключения аккумулятора.
-- D2 и D4: сохранены SS14, SMA, правильная полярность объединения двух источников. D1 удалён: USB теперь проходит через один последовательный диод D2.
-- GPS, TELEM и OUT1–12 остаются на странице 4.
+- U8: TPS62162DSGR, fixed 3.3 V, nominal 1 A capability, 3–17 V input. WSON-8 with exposed pad; local symbol FlightController:TPS62162DSG.
+- L1: 3.3 uH, Coilcraft XAL4030-332MEC, assigned XAL4030 footprint.
+- C34/C42: two parallel 10 uF / 25 V, X7R, ±10%, 1206, Murata GRM31CR71E106KA12L.
+- C31/C33: 100 nF / 25 V, X7R, ±10%, 0603, Murata GRM188R71E104KA01D.
+- C32: 22 uF / 10 V, X7R, ±10%, 1206, Murata GRM31CR71A226KE15L.
+- D3: unidirectional SMBJ5.0A-E3/52, SMB; cathode to PWR_IN, anode to GND. It handles suitable finite-energy transients, not sustained regulator failure or direct battery connection.
+- D2/D4: SS14, SMA, combining USB and external supply paths. D1 was removed; USB power passes through the single series diode D2.
 
-## Расчётный бюджет 3,3 В
+The previous TLV757 linear regulator was replaced. GPS, telemetry and output connectors are on the interface sheet.
 
-Это выделенные проектные лимиты, а не измеренные токи:
+## Preliminary 3.3 V budget
 
-- STM32H743: 450 мА. Лимит ориентирован на максимумы порядка 439 мА при Tj 85 °C для определённого режима 480 МГц из даташита; не покрывает все режимы и температуры.
-- microSD: 200 мА на пиковую запись; выбранную карту нужно измерить и квалифицировать.
-- Внешние датчики I2C: 100 мА суммарно.
-- Два ICM: 3 мА; BMI088: 7 мА; два BMP390: 2 мА; FRAM: 3 мА.
-- Светодиоды и подтяжки: 10 мА.
+These are allocated limits, not measured currents:
 
-Сумма: 775 мА. Рабочая цель — не более 800 мА, включая проверенные переходные нагрузки; запас до номинальных 1 А не заменяет проверку нагрева и стабильности.
+- STM32H743: 450 mA, based on a referenced 480 MHz datasheet point around 439 mA at Tj = 85 °C; this does not cover every operating mode or temperature.
+- microSD: 200 mA peak-write allocation; qualify the selected card.
+- External I2C sensors: 100 mA total.
+- Two ICM sensors: 3 mA; BMI088: 7 mA; two BMP390 devices: 2 mA; FRAM: 3 mA.
+- LEDs and pull resistors: 10 mA.
 
-Линейный TLV757 при 775 мА рассеивал бы примерно 0,93–1,32 Вт при входе 4,5–5 В, поэтому заменён импульсным преобразователем. Реальную температуру TPS62162 нужно проверить на готовой плате.
+Total: **775 mA**. The working target is <= 800 mA including validated transient loads. Margin to the nominal 1 A regulator rating does not replace thermal/stability testing.
 
-Полная нагрузка не гарантируется от обычного USB 2.0: выходные 775 мА при 3,3 В требуют более 500 мА на входе 5 В с учётом потерь. Для полного состава используйте внешние стабилизированные 5 В. Детектора доступного тока USB-C в этой схеме нет. GPS и TELEM питаются от внешней сети +5V.
+A linear regulator at 775 mA would dissipate approximately 0.93–1.32 W for a 4.5–5 V input. Measure actual TPS62162 temperature on the assembled board.
 
-## Перед изготовлением и включением
+Full load is not guaranteed from ordinary USB 2.0: 775 mA at 3.3 V requires more than 500 mA at 5 V after conversion losses. Use adequate external regulated 5 V for the complete system. The circuit does not detect USB-C advertised current. GPS and telemetry power pins use the external +5V rail.
 
-1. Использовать выбранные артикулы конденсаторов; замену согласовывать по эффективной ёмкости, а не только номиналу. Проверить нагрев, пульсации и переходную характеристику готовой платы.
-2. Проверить все посадочные места по чертежам выбранных деталей, особенно WSON и индуктивность.
-3. Разместить CIN, U8, L1 и COUT компактно по рекомендациям TI: минимальная петля переключения, короткий SW, отдельный путь VOS к выходному конденсатору, тепловая площадка U8 на GND с переходными отверстиями.
-4. Проверить, что шум преобразователя не ухудшает работу IMU, барометров и АЦП.
-5. Сначала включить от лабораторного источника с ограничением тока, проверить 3,3 В, пульсации, переходные процессы и нагрев при записи SD и работе датчиков.
-6. Проверить характеристики внешнего 5 В buck: ток всех потребителей 5 В, ограничения тока и поведение при отказе. TVS имеет конечную импульсную энергию и не заменяет защиту от длительного перенапряжения.
+## Capacitor-selection assumptions
 
-Проверка: ERC — 0 ошибок и 0 предупреждений при текущих настройках; ранее отключённые четыре категории сохранены. Отдельно проверены полярность диодов, распиновка U8, связь USB и неизменность остальных сигнальных соединений. Это проверка схемы, не подтверждение работоспособности аппаратуры или готовности к полёту.
+This selection covers the local regulator capacitors, not all project capacitors. For C32, the recorded typical Murata curve indicates approximately 25% capacitance loss at 3.3 V. Applying -10% tolerance and -15% temperature allowance gives `22 × 0.75 × 0.90 × 0.85 ≈ 12.6 uF`, above the adopted 10 uF threshold. This is a typical-curve estimate, not a guaranteed minimum; combined effects, ageing and variation require checking.
 
-## Первичные источники
+Each input 10 uF capacitor has approximately 8 uF at 5 V according to the published 25 °C, 1 Vrms curve. Two in parallel give approximately 16 uF, or approximately 12.2 uF with the same tolerance/temperature allowances. Real small-signal conditions differ from curve conditions. Place input capacitors directly between U8 VIN and PGND.
 
-- TPS62162: https://www.ti.com/lit/ds/symlink/tps62162.pdf
-- TLV757: https://www.ti.com/lit/ds/symlink/tlv757p.pdf
-- STM32H743: https://www.st.com/resource/en/datasheet/stm32h743ii.pdf
-- SMBJ: https://www.vishay.com/docs/88392/smbj.pdf
-- SS14: https://www.vishay.com/docs/88746/ss12.pdf
-- XAL4030: https://www.coilcraft.com/getmedia/6adcb47d-8b55-416c-976e-1e22e0d2848c/xal4000.pdf
+The larger MLCCs use 1206 packages (3.2 × 1.6 mm); 100 nF capacitors use 0603 (1.6 × 0.8 mm). These MLCCs are non-polarized. The original selection did not verify stock or prices.
 
+## Review and testing
 
-## Подбор конденсаторов, 12.10.2026
+1. Match replacements by effective operating capacitance, not nominal capacitance alone.
+2. Check package drawings, especially WSON and the inductor.
+3. Review CIN/U8/L1/COUT layout against TI guidance: small switching loop, short SW copper, appropriate VOS sensing, exposed pad on GND with vias.
+4. Check converter noise coupling into IMUs, barometers and ADC measurements.
+5. Use a current-limited bench supply; check voltage, ripple, transients and temperature during SD writes and sensor operation.
+6. Qualify the external 5 V converter for total load, current limiting and faults. A TVS is not sustained overvoltage protection.
 
-Подбор завершён для локального узла TPS62162: C31–C34 и дополнительного входного конденсатора. Остальные конденсаторы проекта в эту операцию не входят.
+Fresh ERC/DRC reports are in verification/. Existing ignored checks are listed in the main README. CAD checks do not establish hardware function or flight readiness.
 
-C32: по типовому графику Murata (документ 2021 года) при 3,3 В снижение примерно 25%, то есть около 16,5 мкФ. Оценка с допуском −10% и температурной поправкой −15%: 22 × 0,75 × 0,90 × 0,85 ≈ 12,6 мкФ, выше принятого порога 10 мкФ. Это оценка по типовому графику, а не гарантированный производителем минимум: совместное влияние температуры и напряжения, старение и разброс DC bias требуют проверки.
+## References used for selection
 
-Каждый входной 10 мкФ по опубликованному графику при 5 В имеет около 8 мкФ (25 °C, AC 1 Vrms). Два параллельно дают примерно 16 мкФ. С теми же поправками оценка около 12,2 мкФ. Условия графика отличаются от малого переменного сигнала на реальной плате; это проектная оценка. Входные конденсаторы разместить непосредственно между VIN и PGND U8.
-
-Корпуса: 1206 = 3,2 × 1,6 мм для крупных MLCC; 0603 = 1,6 × 0,8 мм для 100 нФ. Проверены стандартные посадочные места KiCad и размеры из документации. Все выбранные MLCC неполярные.
-
-Текущие номинальные характеристики и статус проверены на страницах производителя; графики взяты из опубликованных даташитов Murata, размещённых у дистрибьюторов. Фактические остатки и цены не проверялись.
-
-Источники:
-- TI TPS62162, разделы 9.2.2.5 и 9.2.2.6: https://www.ti.com/lit/ds/symlink/tps62162.pdf
-- Текущие данные входного 10 мкФ: https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM31CR71E106KA12%22%5D
-- Текущие данные выходного 22 мкФ: https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM31CR71A226KE15%22%5D
-- График C32, страница 3: https://www.farnell.com/datasheets/3412299.pdf
-- График C34, страница 2: https://akizukidenshi.com/goodsaffix/GRM31CR71E106KA12.pdf
-- 100 нФ / 25 В: https://www.murata.com/en-eu/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM188R71E104KA01%23
+- https://www.ti.com/lit/ds/symlink/tps62162.pdf
+- https://www.ti.com/lit/ds/symlink/tlv757p.pdf
+- https://www.st.com/resource/en/datasheet/stm32h743ii.pdf
+- https://www.vishay.com/docs/88392/smbj.pdf
+- https://www.vishay.com/docs/88746/ss12.pdf
+- https://www.coilcraft.com/getmedia/6adcb47d-8b55-416c-976e-1e22e0d2848c/xal4000.pdf
+- https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM31CR71E106KA12%22%5D
+- https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM31CR71A226KE15%22%5D
+- C32 curve, page 3: https://www.farnell.com/datasheets/3412299.pdf
+- Input-capacitor curve, page 2: https://akizukidenshi.com/goodsaffix/GRM31CR71E106KA12.pdf
+- https://www.murata.com/en-eu/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM188R71E104KA01%23

@@ -1,16 +1,23 @@
-# Проверка посадочных мест
+# Footprint assignment notes
 
-Все физические символы имеют назначенные существующие посадочные места; номера выводов символов покрыты номерами площадок. Изменены только свойства компонентов, соединения сохранены.
+English edition; the legacy filename is retained for existing links. Footprint assignments are CAD decisions, not a complete qualified procurement BOM.
 
-Выходы OUT1–12, GPS, TELEM, SWD и BOOT0: вертикальные штыревые разъёмы 2,54 мм. Назначение контактов сохраняется; это не означает совместимость с кабелем конкретного устройства.
+Physical symbols have footprint assignments; symbol pin numbers were checked against pad numbers. Verify actual purchasing parts against manufacturer drawings before fabrication.
 
-J2: GCT USB4105-GF-A; A8/B8 (SBU) остаются без подключения. J3: Hirose DM3AT-SF-PEJM5; контакты детектора 9/10 остаются без подключения. U5: MB85RS64PNF-G-JNE1, SOP-8 150 mil. FB1: Murata BLM18PG121SN1D, 0603.
+- Output, GPS, telemetry, SWD and BOOT0 connectors use 2.54 mm vertical headers. The assignment does not establish compatibility with any particular cable.
+- J2: GCT USB4105-GF-A. Unused SBU contacts A8/B8 remain unconnected.
+- J3: Hirose DM3AT-SF-PEJM5. Detection contacts 9/10 remain unconnected.
+- U5: MB85RS64PNF-G-JNE1, SOP-8, 150 mil body.
+- FB1: Murata BLM18PG121SN1D, 0603.
+- Y1: ABM3-8.000MHZ-12-D4Y-T, CL = 12 pF; C15/C16 = 18 pF. See CRYSTAL-DECOUPLING-NOTES-RU.md for assumptions and validation.
+- C17/C21/C28 = 100 nF; C18/C22 = 2.2 uF. Parts and packages are in CRYSTAL-DECOUPLING-BOM.csv.
+- C36: select an actual 470 uF / 16 V electrolytic matching the assigned 8 mm diameter and 3.5 mm lead pitch.
+- J22: the later routed board uses Phoenix Contact 1715721 for the separate servo-power input.
 
-Y1: выбран ABM3-8.000MHZ-12-D4Y-T, CL=12 пФ; C15/C16=18 пФ. Расчёт и условия проверки платы см. CRYSTAL-DECOUPLING-NOTES-RU.md.
+Remaining generic passive packages must be matched to actual parts. FOOTPRINT-ASSIGNMENTS.csv is an assignment record rather than a manufacturing-ready BOM.
 
-C17/C21/C28=100 нФ; C18/C22=2,2 мкФ. Артикулы и корпуса указаны в CRYSTAL-DECOUPLING-BOM.csv. Для остальных пассивных компонентов вне ранее выбранного узла питания размеры назначены как проектное решение; артикулами закупки эта ведомость не является. C36: нужно выбрать конкретный электролит 470 мкФ/16 В с диаметром 8 мм и шагом 3,5 мм. Для всех выбранных корпусов следует проверить реальные закупочные артикулы перед производством.
+## References
 
-Источники:
 - https://gct.co/connector/usb4105
 - https://www.hirose.com/product/p/CL0609-0031-0-00
 - https://www.ramxeed.com/products/feram/s4.html

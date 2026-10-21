@@ -1,57 +1,48 @@
-# Добавленные цепи — 12 октября 2026
+# Interface circuitry and connector guide
 
-Основной проект: `flightcontroller.kicad_pro`. Новый лист: `interfaces`.
+English edition. The PCB is now routed; early layout tasks in previous editions have been completed. Refer to the main README and current CAD sources for the publication snapshot.
 
-## Как открыть изменения
+## External connectors
 
-Закрой редактор схем KiCad **без повторного сохранения старой версии из памяти**, затем открой проект заново. Изменения устанавливаются в исходную папку `<LOCAL_USER_HOME>\Documents\flightcontroller`.
+TX/RX names refer to the controller. Connect controller TX to device RX and controller RX to device TX. A 5 V power pin does not imply 5 V signal tolerance; UART signals are intended for compatible 3.3 V logic.
 
-## Разъёмы
+- J17 RC, USART2: 1 = +5V, 2 = PA2 / RC_TX, 3 = PA3 / RC_RX, 4 = GND. Select a compatible protocol; inverted SBUS and any particular receiver need separate review.
+- J18 GPS, USART1: 1 = +5V, 2 = PA9 / GPS_TX, 3 = PA10 / GPS_RX, 4 = GND.
+- J19 telemetry, USART3: 1 = +5V, 2 = PB10 / TELEM_TX, 3 = PB11 / TELEM_RX, 4 = GND.
+- J20 compass, I2C4: 1 = +3.3V, 2 = PB6 / SCL, 3 = PB9 / SDA, 4 = GND.
+- J21 airspeed: same I2C4 bus and pinout as J20. Devices need compatible, non-conflicting addresses. Shared pull-ups are 4.7 kohm to 3.3 V. Devices requiring 5 V power need a separately reviewed power arrangement.
+- J22 separate servo BEC: 1 = VCC_SERVO, 2 = GND. Current intended supply: regulated 6 V. Local capacitance: 10 uF plus 470 uF / 16 V. This rail is separate from controller +5V. The current connector is Phoenix Contact 1715721. Validate combined servo stall current and the entire supply path.
+- J23 sensing only: 1 = BAT_RAW_SENSE, 2 = external 0–3.3 V analog current-sense output, 3 = GND. This is not a board power input.
+- J24 active buzzer: 1 = +5V, 2 = switched BUZZER_LOW. The recorded circuit targets a 5 V active buzzer up to 20 mA: PE10, MMBT3904, 2.2 kohm base resistor, 100 kohm pull-down and flyback diode. This is on/off control, not completed PX4 timer-driven tone_alarm support.
 
-TX/RX во всех именах указаны со стороны контроллера. TX контроллера подключается к RX внешнего устройства и наоборот. Питание 5 В на разъёме не означает допустимость 5 В на сигнальных линиях: здесь предполагается UART с уровнями 3,3 В.
+## Outputs
 
-- J17 — приёмник RC, USART2: 1 = +5V, 2 = PA2 / RC_TX, 3 = PA3 / RC_RX, 4 = GND. Подходит для согласованного UART-протокола; SBUS с инверсией и конкретный приёмник требуют отдельной проверки.
-- J18 — GPS, USART1: 1 = +5V, 2 = PA9 / GPS_TX, 3 = PA10 / GPS_RX, 4 = GND.
-- J19 — телеметрия, USART3: 1 = +5V, 2 = PB10 / TELEM_TX, 3 = PB11 / TELEM_RX, 4 = GND. Метки RS_TX / TS_RX исправлены.
-- J20 — внешний компас, I2C4: 1 = +3.3V, 2 = PB6 / SCL, 3 = PB9 / SDA, 4 = GND.
-- J21 — внешний датчик воздушной скорости, та же I2C4 и та же распиновка. Разные устройства на этой шине должны иметь разные адреса. Установлены общие подтяжки 4,7 кОм к 3,3 В. Эти разъёмы рассчитаны на модули с питанием 3,3 В; для модуля с обязательным питанием 5 В питание разъёма нужно согласовать отдельно.
-- J22 — питание сервоприводов от отдельного BEC: 1 = VCC_SERVO, 2 = GND. Эта линия отделена от +5V питания контроллера. Добавлены 10 мкФ и 470 мкФ / 16 В. Использовать напряжение, допустимое для выбранных сервоприводов, обычно 5–8,4 В; учитывать ток всех сервоприводов, разъёма и дорожек.
-- J23 — только измерение батареи: 1 = BAT_RAW_SENSE, 2 = аналоговый выход датчика тока 0–3,3 В, 3 = GND. Это не силовой вход питания платы.
-- J24 — внешний активный зуммер 5 В, до 20 мА: 1 = +5V, 2 = коммутируемый минус BUZZER_LOW. Управление PE10 через MMBT3904, 2,2 кОм в базе, 100 кОм подтяжка вниз и обратный диод. Это включение/выключение активного зуммера; стандартный таймерный tone_alarm PX4 здесь не реализован.
+All twelve headers: pin 1 signal, pin 3 GND. Pin 2 is unconnected on OUT1–OUT6 and is VCC_SERVO on OUT7–OUT12.
 
-## Выходы
+- OUT1–OUT4: PE9, PE11, PE13, PE14; intended TIM1 channels 1–4.
+- OUT5–OUT6: PC6, PC7; intended TIM8 channels 1–2. OUT5 is the cruise-motor allocation and OUT6 is spare.
+- OUT7–OUT10: PD12–PD15; intended TIM4 channels 1–4.
+- OUT11–OUT12: PA0–PA1; intended TIM2 channels 1–2.
 
-Все 12 разъёмов: 1 = сигнал, 3 = GND. У OUT1–OUT6 контакт 2 не подключён. У OUT7–OUT12 контакт 2 = VCC_SERVO.
+Every output has a 100 ohm series resistor. OUT1–OUT6 have 10 kohm pull-downs. Signals remain at MCU logic voltage. Series resistors do not provide level conversion or complete external overvoltage protection. Verify actual ESC/servo requirements; add suitable buffers if necessary. DShot requires a dedicated PX4 timer/DMA implementation and bench validation. The main README gives the exact connector/GPIO/resistor map.
 
-- OUT1–OUT4: PE9, PE11, PE13, PE14 — TIM1 CH1–CH4.
-- OUT5–OUT6: PC6, PC7 — TIM8 CH1–CH2. OUT5 предназначен для маршевого двигателя; OUT6 резерв.
-- OUT7–OUT10: PD12–PD15 — TIM4 CH1–CH4.
-- OUT11–OUT12: PA0–PA1 — TIM2 CH1–CH2.
+## Measurement and service circuits
 
-Добавлены последовательные резисторы 100 Ом на всех выходах и подтяжки 10 кОм вниз на OUT1–OUT6. Сигнал остаётся 3,3 В. Резисторы не заменяют полноценную защиту от внешнего перенапряжения или буфер. Совместимость входов конкретных ESC и сервоприводов нужно проверить; если требуется сигнал 5 В, добавить согласованный буфер. DShot требует реализации таймеров и DMA в собственном target PX4.
+- PC0 / ADC_BAT_V / ADC1_INP10: 91 kohm + 91 kohm / 10 kohm divider, 1% resistors, ratio 19.2. A nominal 50.4 V input gives 2.625 V, followed by 1 kohm / 100 nF filtering. This assumes ordinary 12S cells charged to 4.2 V each. Check tolerances, transient exposure and input protection.
+- PC1 / ADC_BAT_I / ADC1_INP11: 1 kohm / 100 nF filter. Current sensor, offset, gain and calibration remain to be selected.
+- PC13 / SAFETY_BTN: button to GND, 10 kohm pull-up and 100 nF filter.
+- NRST: reset button to GND with the existing capacitor.
+- PE0 / LED_STATUS: LED with 1 kohm resistor, active high. A separate LED indicates 3.3 V power.
+- USB: USBLC6-2SC6 protection on D+/D-, with protection supply and 100 nF on connector VBUS before the diode. Review line routing and ground return. The schematic uses the compatible-pinout USBLC6-2P6 symbol and an explicit SOT-23-6 footprint for the SC6 part.
+- BMI088 uses SPI4 labels for PE2/PE5/PE6. FRAM remains on SPI3.
 
-## Измерения и служебные цепи
+## Remaining work
 
-- PC0 = ADC_BAT_V, ADC1_INP10. Делитель 91 кОм + 91 кОм / 10 кОм, резисторы 1%. Коэффициент 19,2; 50,4 В даёт номинально 2,625 В на входе. Далее 1 кОм и 100 нФ. Расчёт относится к обычной 12S батарее с максимумом 4,2 В на ячейку; выбросы и защиту измерительного входа нужно отдельно проверить перед эксплуатацией.
-- PC1 = ADC_BAT_I, ADC1_INP11. Фильтр 1 кОм / 100 нФ. Датчик тока, его смещение, масштаб и калибровка пока не выбраны.
-- PC13 = SAFETY_BTN: кнопка на GND, подтяжка 10 кОм и 100 нФ.
-- NRST: добавлена кнопка Reset на GND, существующий конденсатор сохранён.
-- PE0 = LED_STATUS. Светодиод с резистором 1 кОм; высокий уровень включает его.
-- Второй светодиод показывает наличие 3,3 В.
-- USB D− / D+ защищены USBLC6-2SC6; питание защитной сборки и 100 нФ подключены к VBUS разъёма до диода. Разместить сборку рядом с USB-разъёмом, проводники через её контактные площадки, короткий путь на землю. В библиотеке используется общий символ USBLC6-2P6 с совпадающей распиновкой и явно заданным корпусом SOT-23-6 для варианта SC6.
-- Метки BMI088 SPI3_* исправлены на SPI4_*: PE2/PE5/PE6 относятся к SPI4. FRAM остаётся на SPI3.
+Select actual peripherals, verify voltages/protocols/cables, review external-port protection and output buffers, and complete purchasing-part and power checks. The USB protection device does not protect every external connector. Develop a custom PX4 target and perform bench testing. Fresh flight-controller CAD reports are in verification/; the unfinished meshtransciever project is outside that verification scope.
 
-## Что ещё осталось перед изготовлением
+## References
 
-1. Выбрать конкретные GPS, приёмник, телеметрию, компас, airspeed, датчик тока, ESC и сервоприводы; проверить напряжения, протоколы и распиновки.
-2. Завершить выбор диодов и TVS в питании, проверить защиту LDO от перенапряжения, нагрев и суммарный ток. Generic D_Schottky / D_TVS в исходной схеме не являются окончательным подбором деталей. Внешний buck 6–12S остаётся отдельной задачей.
-3. Подобрать буферы выходов при необходимости и защиту внешних UART/I2C/ADC. Добавленная USB ESD-сборка не закрывает остальные внешние порты.
-4. Проверить питание/развязку STM32 и всех датчиков по документации, кварц по его CL, окончательные номиналы и корпуса компонентов. Посадочные места новых малых компонентов и разъёмов назначены как исходные варианты, не как готовая производственная спецификация.
-5. Разработать печатную плату, выполнить DRC и проверку силовых/аналоговых/USB цепей. Плата ещё не разведена.
-6. Создать собственный target PX4: распиновка, тактирование, SPI/I2C/UART, таймеры, DMA DShot, ADC, светодиод, кнопка и GPIO зуммера. Провести стендовые испытания.
-
-## Проверка
-
-KiCad 10 ERC: 0 ошибок, 0 предупреждений. Существующие четыре отключённые проверки проекта не изменены; они перечислены в `ERC.rpt`. Дополнительно проверены по экспортированному netlist UART, внешняя I2C, ADC, кнопки, USB ESD, все 12 резисторов выходов, подтяжки моторов и разделение VCC_SERVO / +5V. Это проверка схемных соединений, а не подтверждение готовности к полёту.
-
-Документация: [STM32H743](https://www.st.com/resource/en/datasheet/stm32h743ii.pdf), [USBLC6-2](https://www.st.com/resource/en/datasheet/usblc6-2.pdf), [PX4 I2C](https://docs.px4.io/main/en/sensor_bus/i2c_general), [PX4 DShot](https://docs.px4.io/main/en/peripherals/dshot).
+- https://www.st.com/resource/en/datasheet/stm32h743ii.pdf
+- https://www.st.com/resource/en/datasheet/usblc6-2.pdf
+- https://docs.px4.io/main/en/sensor_bus/i2c_general
+- https://docs.px4.io/main/en/peripherals/dshot

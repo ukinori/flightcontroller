@@ -4,7 +4,7 @@ Custom four-layer flight-controller hardware for VTOL and fixed-wing aircraft, d
 
 **Status: routed hardware prototype.** PX4 integration is planned; this repository does not contain a completed PX4 board port, bootloader or flight-tested firmware. The board has not been electrically or flight qualified. Design-rule checks do not establish functional or flight safety.
 
-[Русское описание](docs/PROJECT-RU.md) · [Board review and bring-up checklist](docs/PROJECT-RU.md#перед-изготовлением-и-запуском)
+[Hardware inspection guide](docs/PROJECT-RU.md) · [Board review and bring-up checklist](docs/PROJECT-RU.md#before-fabrication-and-bring-up)
 
 ![Top-side component placement](placement-preview.png)
 
@@ -100,7 +100,7 @@ Current reports are in **verification/**. Older reports and routing notes in the
 - `FlightController.pretty/`, `FlightController.kicad_sym` — project-local CAD libraries.
 - CSV/Markdown files — component-selection records, footprint assignments and engineering notes.
 - `verification/` — fresh ERC and DRC reports for this publication snapshot.
-- `docs/PROJECT-RU.md` — Russian overview and bring-up checklist.
+- `docs/PROJECT-RU.md` — English hardware inspection and bring-up guide. Legacy filenames containing `RU` are retained for existing links; all current documentation is in English.
 - `meshtransciever/` — a separate, unfinished radio/mesh hardware project included from the source folder. Its PCB is a placeholder; it is not part of the flight-controller verification results.
 
 Editor history, restore backups, lock files and machine-specific UI state are excluded. The publication copy replaces the root machine-specific symbol-library table with a project-relative table; the working CAD source folder is unchanged.

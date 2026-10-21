@@ -1,28 +1,30 @@
-# Номиналы конденсаторов и кварц — 13.10.2026
+# Crystal and decoupling component selection
 
-Изменения сохранены на листе MCU. Соединения и номера выводов не изменены.
+English edition of the engineering record dated 2026-10-13. The legacy filename is retained for existing links. Component selections require validation on assembled hardware.
 
-- C17/C21: 100 нФ, 25 В, X7R, ±10%, 0603, Murata GRM188R71E104KA01D. Развязка VDD U2/U3.
-- C18/C22: 2,2 мкФ, 16 В, X7R, ±10%, 0805, Murata GRM21BR71C225KA12L. Локальный запас ёмкости VDD U2/U3. При размещении учитывать снижение ёмкости от постоянного напряжения.
-- C28: 100 нФ, 25 В, X7R, ±10%, 0603, Murata GRM188R71E104KA01D. Развязка VDD U5; поместить рядом с выводом 8 FRAM.
-- Y1: Abracon ABM3-8.000MHZ-12-D4Y-T; 8 МГц, CL=12 пФ, ESR ≤140 Ом, C0 ≤7 пФ, -40…+85 °C, точность и стабильность ±30 ppm по отдельности. Корпус ABM3 5×3,2 мм, 2 площадки.
-- C15/C16: 18 пФ, 50 В, C0G, ±5%, 0603, Murata GRM1885C1H180JA01D.
+## Selected parts
 
-## Расчёт HSE
+- C17/C21: 100 nF, 25 V, X7R, ±10%, 0603, Murata GRM188R71E104KA01D. Local VDD decoupling for U2/U3.
+- C18/C22: 2.2 uF, 16 V, X7R, ±10%, 0805, Murata GRM21BR71C225KA12L. Local bulk capacitance for U2/U3; account for DC-bias derating.
+- C28: 100 nF, 25 V, X7R, ±10%, 0603, Murata GRM188R71E104KA01D. FRAM decoupling, close to U5 pin 8.
+- Y1: Abracon ABM3-8.000MHZ-12-D4Y-T; 8 MHz, CL = 12 pF, ESR <= 140 ohms, C0 <= 7 pF, -40 to +85 °C. Frequency tolerance and stability are each ±30 ppm. ABM3 two-pad package, 5 × 3.2 mm.
+- C15/C16: 18 pF, 50 V, C0G, ±5%, 0603, Murata GRM1885C1H180JA01D.
 
-По формуле ST: C15=C16=2(CL-Cs). При CL=12 пФ и предварительной оценке паразитной ёмкости Cs=3 пФ получаем 18 пФ. Cs зависит от платы; выбранные 18 пФ — исходный номинал для проверки на изготовленной плате.
+## HSE calculations
 
-Критическая крутизна кварца gmcrit=4·ESR·(2πf)²·(C0+CL)² = 0.511 мА/В при максимальных ESR=140 Ом и C0=7 пФ. Это ниже Gmcritmax=1,5 мА/В в таблицах HSE STM32H743 для ревизий Y/V; этот параметр уже задаётся ST с необходимым запасом. Расчёт подтверждает предварительный выбор по условию запуска, но не заменяет проверку платы.
+The recorded load-capacitor estimate is `C15 = C16 = 2 × (CL - Cs)`. With CL = 12 pF and assumed stray capacitance Cs = 3 pF, the starting value is 18 pF. Actual stray capacitance depends on the board and must be checked after assembly.
 
-После разводки и сборки: проверить запуск HSE при холоде/жаре и допустимом питании, измерить частоту через MCO, проверить мощность возбуждения кварца (максимум 100 мкВт по ABM3), при необходимости подобрать C15/C16 и резистор ограничения тока по AN2867. Прямое подключение обычного осциллографического щупа к кварцу меняет его нагрузку. Подключение PH0/PH1 сохранено. Разместить Y1/C15/C16 максимально близко к выводам 12/13 MCU с короткими дорожками и локальным возвратом земли.
+The critical transconductance calculation is `gmcrit = 4 × ESR × (2πf)^2 × (C0 + CL)^2 = 0.511 mA/V`, using the maximum ESR and C0 above. This is below the referenced STM32H743 Y/V revision limit of 1.5 mA/V. Confirm the applicable silicon revision and datasheet conditions; this preliminary calculation does not replace oscillator testing.
 
-## Источники
+Verify startup across the intended supply/temperature range, measure frequency through MCO, and check drive level against the ABM3 100 uW maximum. Adjust the capacitors and any limiting resistor as required by ST AN2867. A normal oscilloscope probe directly on the crystal alters its load. Keep Y1/C15/C16 close to PH0/PH1, MCU pins 12/13, with short connections and a local ground return.
 
-- TDK ICM-42688-P, DS-000347, типовая схема и BOM разделы 4.2–4.3: https://invensense.tdk.com/wp-content/uploads/2020/04/ds-000347_icm-42688-p-datasheet.pdf
-- Abracon точный артикул: https://abracon.com/parametric/crystals/ABM3-8.000MHZ-12-D4Y-T
-- Abracon ABM3: https://abracon.com/Resonators/ABM3.pdf
-- ST STM32H743 datasheet: https://www.st.com/resource/en/datasheet/stm32h743vi.pdf
-- ST расчёт кварца и нагрузочных конденсаторов: https://community.st.com/stm32-mcus-60/how-to-select-a-compatible-crystal-and-load-capacitors-for-stm32-with-layout-guidelines-148169
-- Murata GRM1885C1H180JA01: https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1885C1H180JA01-01.pdf
+## References used for selection
 
-Это завершает перечисленные номиналы; проверка разводки и всего закупочного BOM остаётся отдельным этапом. Не все компоненты проекта уже имеют закупочные артикулы.
+- TDK ICM-42688-P, sections 4.2–4.3: https://invensense.tdk.com/wp-content/uploads/2020/04/ds-000347_icm-42688-p-datasheet.pdf
+- Exact crystal: https://abracon.com/parametric/crystals/ABM3-8.000MHZ-12-D4Y-T
+- ABM3: https://abracon.com/Resonators/ABM3.pdf
+- STM32H743: https://www.st.com/resource/en/datasheet/stm32h743vi.pdf
+- ST oscillator guidance: https://community.st.com/stm32-mcus-60/how-to-select-a-compatible-crystal-and-load-capacitors-for-stm32-with-layout-guidelines-148169
+- Murata load capacitor: https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1885C1H180JA01-01.pdf
+
+The associated CSV covers these selected parts. Other purchasing parts and the complete PCB/BOM still require review.
