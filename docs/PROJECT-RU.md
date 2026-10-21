@@ -1,54 +1,51 @@
-# Полётный контроллер STM32H743
+# Hardware opening, inspection and bring-up guide
 
-Экспериментальная плата для VTOL и самолётов. Предполагаемая конфигурация: четыре подъёмных двигателя, один маршевый двигатель и до пяти сервоприводов. Предусмотрено 12 выходов, включая резервные.
+This guide is entirely in English. Its legacy filename is retained for existing links.
 
-## Как открыть
+## Open the project
 
-1. Скачай весь репозиторий и распакуй его в отдельную папку.
-2. В KiCad 10 открой `flightcontroller.kicad_pro`.
-3. Схема — `flightcontroller.kicad_sch`, плата — `flightcontroller.kicad_pcb`.
-4. `untitled.kicad_sch` — необходимый лист MCU; не удаляй его.
-5. Локальные библиотеки находятся рядом с проектом; стандартные библиотеки устанавливаются вместе с KiCad.
+1. Download the whole repository and extract it into one directory.
+2. In KiCad 10, open flightcontroller.kicad_pro.
+3. Open flightcontroller.kicad_sch for the schematic and flightcontroller.kicad_pcb for the routed board.
+4. Keep untitled.kicad_sch: it is the required MCU sheet.
+5. Install the standard KiCad libraries. Project-specific libraries are bundled beside the project using ${KIPRJMOD} paths.
 
-## Что есть на плате
+## Inspect the PCB
 
-STM32H743, два ICM-42688-P, BMI088, барометры BMP390, FRAM, microSD, USB-C, разъёмы GPS/телеметрии/RC, внешний I2C, измерительные входы, зуммер и кнопки. Подробные цепи, номиналы и контакты определяются схемой. Подбор некоторых деталей записан в CSV и отдельных заметках.
+1. Review the main README for connector pinouts and output/GPIO/resistor mapping.
+2. Enable one copper layer at a time in PCB Editor's Appearance panel.
+3. F.Cu contains components, routing and GND/VCC_SERVO pours.
+4. In1.Cu is the GND plane without ordinary routed tracks.
+5. In2.Cu combines a 3.3 V pour and routing; it is not a continuous power plane.
+6. B.Cu carries routing and +5V/VCC_SERVO pours.
+7. Highlight a net and follow it through vias. A series resistor separates two differently named nets; highlight both sides separately.
+8. Refill zones and run ERC/DRC after changes, reviewing ignored checks as well as reported findings.
 
-## Питание
+A copper zone belongs to one net. Vias connect copper on different layers. Different nets need the required clearance.
 
-- J4: стабилизированные **5 В**, контакт 1 — плюс, контакт 2 — GND.
-- Аккумулятор 6–12S подключается через **внешний преобразователь**, а не напрямую к J4.
-- J22: отдельные стабилизированные **6 В для сервоприводов**, контакт 1 — VCC_SERVO, контакт 2 — GND.
-- У выходных разъёмов контакт 1 — сигнал, контакт 3 — GND. Контакт 2 не подключён на OUT1–OUT6; на OUT7–OUT12 это VCC_SERVO.
-- Цель 10 А для общей шины сервоприводов предварительная. Допустимый ток ещё не подтверждён испытаниями и зависит от конкретных сервоприводов, BEC, проводов, толщины меди и нагрева.
+## Connections
 
-Карта всех выходов и остальных разъёмов находится в основном README. Планируется DShot на OUT1–OUT5 и PWM на OUT7–OUT11, однако это требует собственного порта PX4 и проверки таймеров/DMA.
+- J4: regulated 5 V, pin 1 positive and pin 2 GND. Never connect a raw 6–12S battery directly; use a separate external converter.
+- J22: separate regulated 6 V servo supply, pin 1 VCC_SERVO and pin 2 GND.
+- Outputs: pin 1 signal, pin 3 GND. Pin 2 is unconnected on OUT1–OUT6 and is VCC_SERVO on OUT7–OUT12.
+- The 10 A servo-rail target is provisional, not a qualified rating. Validate actual stall current, BEC, wiring, connector, copper and heat rise.
+- Intended allocation: DShot on OUT1–OUT5 and PWM on OUT7–OUT11, requiring custom PX4 timer/DMA integration.
+- Controller TX connects to peripheral RX and controller RX to peripheral TX. Verify voltage levels and cable pinouts.
 
-## Слои
+## Verification scope
 
-1. F.Cu — компоненты, дорожки, полигоны GND и VCC_SERVO.
-2. In1.Cu — полигон GND, обычных дорожек на нём нет.
-3. In2.Cu — полигон +3.3V и часть дорожек. Это смешанный слой.
-4. B.Cu — дорожки и полигоны +5V/VCC_SERVO.
+The 2026-10-21 flight-controller publication snapshot reports zero ERC violations, physical DRC violations, unconnected items and schematic/PCB parity issues under the existing project settings. Reports are in verification/. Ignored checks are listed in the main README and JSON reports. Earlier U8/L1 parity warnings were not reproduced.
 
-Полигон — область меди, соединённая с заданной цепью. Переходные отверстия соединяют медь разных слоёв. Между разными цепями должны оставаться зазоры.
+These results do not establish electrical operation, current rating, fabrication compliance or flight safety. The separate meshtransciever project is unfinished; its PCB is a placeholder and is outside this verification scope.
 
-## Проверки
+## Before fabrication and bring-up
 
-21 октября 2026 года для публикуемой копии выполнены ERC и DRC в KiCad CLI 10.0.4: **0 нарушений, 0 незамкнутых соединений и 0 расхождений платы со схемой**. Отчёты находятся в `verification/`. В проекте остаются отключённые проверки, перечисленные в основном README и JSON-отчётах. Старые три предупреждения U8/L1 на этой копии не воспроизвелись.
+1. Review the schematic, complete power budget, footprints, mechanics, sensor supplies, switching regulator and return paths.
+2. Select a manufacturer and agree the four-layer stack-up, nominal 1.6 mm thickness, copper weights, 0.15 mm tracks/clearances and 0.20 mm via drills.
+3. Select actual servos/BEC and validate the complete power path for combined peak/stall current.
+4. Complete the purchasing BOM; existing CSV files cover assignments and selected parts.
+5. Develop the dedicated PX4 port and bootloader. Firmware for another board does not establish compatibility.
+6. First use a current-limited regulated 5 V bench supply without motors, servos or propellers. Check shorts, rails, SWD and oscillator operation before testing interfaces individually.
+7. Test transients, sensors, outputs, heat and fault behaviour before aircraft use.
 
-Эти результаты не подтверждают работоспособность, допустимый ток, соответствие требованиям производства или пригодность к полётам.
-
-## Перед изготовлением и запуском
-
-1. Проверить схему, полный бюджет питания, посадочные места, механику, питание датчиков, преобразователь и возвратные пути сигналов.
-2. Выбрать изготовителя и согласовать четыре слоя, толщину 1,6 мм, толщины меди, дорожки/зазоры 0,15 мм и отверстия via 0,20 мм.
-3. Выбрать конкретные сервоприводы и BEC, рассчитать пиковые токи и проверить силовую шину.
-4. Закончить закупочный BOM. Существующие CSV содержат частичный подбор, а не полностью проверенную спецификацию.
-5. Подготовить порт PX4 и загрузчик. Готовая прошивка для другой платы не подтверждает совместимость этой разводки.
-6. Первое включение — от лабораторного источника 5 В с ограничением тока, без двигателей, сервоприводов и пропеллеров. Сначала проверить отсутствие коротких замыканий, напряжения, SWD и запуск кварца; затем проверять интерфейсы по одному.
-7. Выполнить стендовые испытания питания, датчиков, выходов, нагрева и поведения при сбоях перед использованием на летательном аппарате.
-
-Каталог `meshtransciever/` содержит отдельный незавершённый радиопроект. Его плата пока является заготовкой; результаты проверок полётного контроллера на него не распространяются.
-
-Публичная копия включает актуальные исходники и документы. История редактора, временные файлы и резервные копии восстановления исключены.
+Editor history, temporary files and restore backups are excluded. Third-party library notices are retained.
