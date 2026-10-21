@@ -1,0 +1,130 @@
+﻿Reference,Value,Footprint,Status
+C1,4mu7,Capacitor_SMD:C_0805_2012Metric,Assigned; component MPN still required
+C10,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C11,1mu,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C12,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C13,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C14,1mu,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C15,18p,Capacitor_SMD:C_0603_1608Metric,Assigned; MPN selected
+C16,18p,Capacitor_SMD:C_0603_1608Metric,Assigned; MPN selected
+C17,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; MPN selected
+C18,2.2u,Capacitor_SMD:C_0805_2012Metric,Assigned; MPN selected
+C19,10nF,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C2,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C20,10nF,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C21,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; MPN selected
+C211,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C22,2.2u,Capacitor_SMD:C_0805_2012Metric,Assigned; MPN selected
+C23,10u,Capacitor_SMD:C_0805_2012Metric,Assigned; component MPN still required
+C24,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C25,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C26,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C27,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C28,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; MPN selected
+C29,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C3,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C30,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C31,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C32,22u,Capacitor_SMD:C_1206_3216Metric,Assigned; component MPN still required
+C33,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C34,10u,Capacitor_SMD:C_1206_3216Metric,Assigned; component MPN still required
+C35,10u,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C36,470u 16V,Capacitor_THT:CP_Radial_D8.0mm_P3.50mm,Assigned; component MPN still required
+C37,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C38,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C39,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C4,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C40,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C42,10u,Capacitor_SMD:C_1206_3216Metric,Assigned; component MPN still required
+C5,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C6,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C7,1mu,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
+C8,2.2mu,Capacitor_SMD:C_0805_2012Metric,Assigned; component MPN still required
+C9,2.2mu,Capacitor_SMD:C_0805_2012Metric,Assigned; component MPN still required
+D2,SS14,Diode_SMD:D_SMA,Assigned; component MPN still required
+D3,SMBJ5.0A,Diode_SMD:D_SMB,Assigned; component MPN still required
+D4,SS14,Diode_SMD:D_SMA,Assigned; component MPN still required
+D5,POWER_GREEN,LED_SMD:LED_0603_1608Metric,Assigned; component MPN still required
+D6,STATUS_GREEN,LED_SMD:LED_0603_1608Metric,Assigned; component MPN still required
+D7,1N4148W,Diode_SMD:D_SOD-123,Assigned; component MPN still required
+FB1,FerriteBead,Inductor_SMD:L_0603_1608Metric,Assigned
+J1,Conn_01x05_Pin,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,Assigned; component MPN still required
+J10,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
+J11,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
+J12,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
+J13,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
+J14,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
+J15,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
+J16,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
+J17,RC_USART2_3V3_LOGIC,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Assigned; component MPN still required
+J18,GPS,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Assigned; component MPN still required
+J19,TELEMETRY,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Assigned; component MPN still required
+J2,USB_C_Receptacle_USB2.0_14P,Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,"Assigned; unused footprint pads A8,B8"
+J20,COMPASS_I2C4_3V3,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Assigned; component MPN still required
+J21,AIRSPEED_I2C4_3V3,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Assigned; component MPN still required
+J22,SERVO_BEC_INPUT,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Assigned; component MPN still required
+J23,BATTERY_SENSE_ONLY,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
+J24,ACTIVE_BUZZER_5V_20mA_MAX,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Assigned; component MPN still required
+J3,Micro_SD_Card,Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5,"Assigned; unused footprint pads 10,9"
+J4,5V_REGULATED_INPUT,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Assigned; component MPN still required
+J5,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
+J6,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
+J7,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
+J8,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
+J9,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
+JP1,Jumper_2_Open,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Assigned; component MPN still required
+L1,3.3u,Inductor_SMD:L_Coilcraft_XAL4030-XXX,Assigned
+Q1,MMBT3904,Package_TO_SOT_SMD:SOT-23,Assigned; component MPN still required
+R1,47,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R10,4.7k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R11,4.7k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R12,4.7k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R13,4.7k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R14,91k 1%,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R15,91k 1%,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R16,10k 1%,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R17,1k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R18,1k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R19,10k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R2,10k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R20,1k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R21,1k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R22,2.2k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R23,100k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R24,100,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R25,100,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R26,100,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R27,100,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R28,100,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R29,100,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R3,5.1k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R30,100,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R31,100,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R32,100,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R33,100,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R34,100,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R35,100,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R36,10k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R37,10k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R38,10k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R39,10k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R4,5.1k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R40,10k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R41,10k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R5,47k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R6,47k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R7,47k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R8,47k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+R9,47k,Resistor_SMD:R_0603_1608Metric,Assigned; component MPN still required
+SW1,RESET,Button_Switch_SMD:SW_SPST_TL3342,Assigned; component MPN still required
+SW2,SAFETY,Button_Switch_SMD:SW_SPST_TL3342,Assigned; component MPN still required
+U1,STM32H743VITx,Package_QFP:LQFP-100_14x14mm_P0.5mm,Assigned
+U2,ICM-42688-P,FlightController:LGA14_2P5X3X0P91_TDK,Assigned
+U3,ICM-42688-P,FlightController:LGA14_2P5X3X0P91_TDK,Assigned
+U4,BMI088,Package_LGA:Bosch_LGA-16_4.5x3mm_P0.5mm_LayoutBorder7x1y_ClockwisePinNumbering,Assigned
+U5,MB85RS64,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,Assigned
+U6,BMP390,FlightController:10LGA_2X2X0p75_BOS,Assigned
+U7,BMP390,FlightController:10LGA_2X2X0p75_BOS,Assigned
+U8,TPS62162DSG,Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias,Assigned
+U9,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,Assigned
+Y1,8MHz,Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm,MPN selected; PCB validation required

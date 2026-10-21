@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "FlightController") (type "KiCad") (uri "${KIPRJMOD}/FlightController.pretty") (options "") (descr "Manufacturer sensor footprints")))

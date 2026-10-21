@@ -1,0 +1,13 @@
+# KiCad local state and recovery files
+*.kicad_prl
+*.lck
+~*
+*.bak
+*.tmp
+*-backups/
+_restore_backup*/
+backup_*/
+backup-*/
+.history/
+.DS_Store
+Thumbs.db

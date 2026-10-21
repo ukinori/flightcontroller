@@ -1,0 +1,82 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-13T15:04:53",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.4",
+    "schematic_parity": [
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(U8-SW)] of L1 on F.Cu",
+                    "pos": {
+                        "x": 143.315,
+                        "y": 88.75
+                    },
+                    "uuid": "194179a6-30df-499b-817a-d03822dde70d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad 7 [Net-(U8-SW)] of U8 on F.Cu",
+                    "pos": {
+                        "x": 140.95,
+                        "y": 88.75
+                    },
+                    "uuid": "4c576a18-685d-4c74-a547-f9ad477dc53d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad 8 [unconnected-(U8-PG-Pad8)] of U8 on F.Cu",
+                    "pos": {
+                        "x": 140.95,
+                        "y": 88.25
+                    },
+                    "uuid": "8eb61718-0f25-4933-8b34-6e33d1b17bf7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        }
+    ],
+    "source": "flightcontroller.kicad_pcb",
+    "unconnected_items": [],
+    "violations": []
+}
