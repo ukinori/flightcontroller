@@ -1,0 +1,6889 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(uuid "2a4e4762-a970-4c24-880c-31259ccb8427")
+	(paper "A3")
+	(lib_symbols
+		(symbol "mesh_radio:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mesh_radio:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mesh_radio:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 -1.27)
+						(xy 1.27 -1.27)
+						(xy 0 -2.54)
+						(xy -1.27 -1.27)
+						(xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "AD9361 LOCAL SUPPLIES - no external regulators fitted"
+		(at 20.3200 17.78 0)
+		(effects
+			(font
+				(size 2.0 2.0)
+			)
+			(justify left)
+		)
+		(uuid "85a5326c-7e35-4d0f-a442-267011e20b38")
+	)
+	(text "TX_LO | B9 B10"
+		(at 20.3200 25.4000 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left)
+		)
+		(uuid "ca11ab53-eac6-4ab0-aae5-1ad08ffddeb0")
+	)
+	(text "1.3 V"
+		(at 20.3200 30.4800 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "42cc9353-a52c-4b13-9e2b-5dbbd2fad47a")
+	)
+	(global_label "AD9361_1V3_TX_LO"
+		(shape input)
+		(at 30.4800 35.5600 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "5600f038-fff0-4484-b1b3-069b77de600c")
+	)
+	(wire
+		(pts
+			(xy 30.4800 35.5600)
+			(xy 30.4800 40.6400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd1191c7-eb6d-4c4b-a012-75264e254796")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 30.4800 49.5300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "edb784d6-5888-449e-8628-ec720effef1d")
+		(property "Reference" "C1"
+			(at 33.0200 48.2600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 33.0200 50.8000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.4800 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C320/C321"
+			(at 30.4800 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "B9 B10"
+			(at 30.4800 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8cb2b9a6-15d9-407c-b418-2dfadda578e2")
+		)
+		(pin "2"
+			(uuid "cb4a9421-fccf-459d-9e73-04a2f34e2c89")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 30.4800 40.6400)
+			(xy 30.4800 45.7200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa616f56-47c4-47a2-bf55-06960991ef8e")
+	)
+	(wire
+		(pts
+			(xy 30.4800 53.3400)
+			(xy 30.4800 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fef6508b-2c59-418c-9045-9990beee2356")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 50.8000 49.5300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "04b6dc99-9f5e-4fb3-8a91-6cf94866a499")
+		(property "Reference" "C2"
+			(at 53.3400 48.2600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 53.3400 50.8000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8000 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C320/C321"
+			(at 50.8000 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "B9 B10"
+			(at 50.8000 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "53ed1fd6-e7cb-4714-bf09-e7f94879a048")
+		)
+		(pin "2"
+			(uuid "8bc1b17b-398d-482a-8e6b-dddedec06146")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 50.8000 40.6400)
+			(xy 50.8000 45.7200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "295d7268-46c4-48f1-8f56-ca0573de3a12")
+	)
+	(wire
+		(pts
+			(xy 50.8000 53.3400)
+			(xy 50.8000 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d7a8f7d-7f9e-427e-a519-09b75fdf455b")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 71.1200 49.5300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e415a1c2-acd0-4327-b0ac-e4d1582e596d")
+		(property "Reference" "C3"
+			(at 73.6600 48.2600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 73.6600 50.8000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.1200 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "UG-570 Rev.A p.120"
+			(at 71.1200 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "B9"
+			(at 71.1200 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2ff40e0b-2df2-46c8-88e4-e2f5cbbfcaf6")
+		)
+		(pin "2"
+			(uuid "ca85bc9e-e935-4338-bddd-49e0139b3784")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 71.1200 40.6400)
+			(xy 71.1200 45.7200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b2012b3-fee6-4bd7-8d90-ab6624422c25")
+	)
+	(wire
+		(pts
+			(xy 71.1200 53.3400)
+			(xy 71.1200 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f395a90-6ebd-4c6a-81ff-20393d23547c")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 91.4400 49.5300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a870510-3d5e-4d4a-b815-e25a59dfdaf0")
+		(property "Reference" "C4"
+			(at 93.9800 48.2600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 93.9800 50.8000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.4400 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "UG-570 Rev.A p.120"
+			(at 91.4400 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "B10"
+			(at 91.4400 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ca313c6-889e-4ed6-b12c-91999b619e35")
+		)
+		(pin "2"
+			(uuid "9a6e3fc1-e22e-44cf-8885-0a6e49dd4de1")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 91.4400 40.6400)
+			(xy 91.4400 45.7200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c96a740-0722-42d0-9e40-20583b40c7e0")
+	)
+	(wire
+		(pts
+			(xy 91.4400 53.3400)
+			(xy 91.4400 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec3f025b-1b26-479d-b3f3-7b48eea6bbb1")
+	)
+	(wire
+		(pts
+			(xy 30.4800 40.6400)
+			(xy 50.8000 40.6400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc48adf7-f07b-439e-aa5c-718dce23c072")
+	)
+	(wire
+		(pts
+			(xy 30.4800 58.4200)
+			(xy 50.8000 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6e7eb4e-6173-448e-a03e-d0476c4f7f43")
+	)
+	(wire
+		(pts
+			(xy 50.8000 40.6400)
+			(xy 71.1200 40.6400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff3f1019-da78-4028-bcf5-7e7095d5d321")
+	)
+	(wire
+		(pts
+			(xy 50.8000 58.4200)
+			(xy 71.1200 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46261189-627b-4d34-8c76-af1ff2536874")
+	)
+	(wire
+		(pts
+			(xy 71.1200 40.6400)
+			(xy 91.4400 40.6400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef33f54f-270a-4ae0-af80-463d1e939982")
+	)
+	(wire
+		(pts
+			(xy 71.1200 58.4200)
+			(xy 91.4400 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61d308c6-8181-4447-81f7-23696781de63")
+	)
+	(junction
+		(at 30.4800 40.6400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3f91592-237d-46f8-85ae-52545b0fed42")
+	)
+	(junction
+		(at 50.8000 40.6400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "72a1c38f-3319-42d4-87cd-5766aa66ac69")
+	)
+	(junction
+		(at 71.1200 40.6400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09126571-a70b-4927-99bb-908b057f2ae3")
+	)
+	(junction
+		(at 50.8000 58.4200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8ca225c-a874-4077-ba47-7c3d3c1f5980")
+	)
+	(junction
+		(at 71.1200 58.4200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11d96e1d-f2ac-4f21-8d2b-c47298139abd")
+	)
+	(wire
+		(pts
+			(xy 30.4800 58.4200)
+			(xy 30.4800 60.9600)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef63c896-8dd1-412f-9adb-0409272004bb")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 30.4800 60.9600 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "99c8f9ee-768e-4e7f-b4bb-6aab8ff7bd9a")
+		(property "Reference" "#PWR004"
+			(at 33.0200 59.6900 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.0200 62.2300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.4800 60.9600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 30.4800 60.9600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 30.4800 60.9600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f59dc02-89dd-47e5-8f09-c0c4cc763cbd")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "#PWR004")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 30.4800 58.4200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32930a5a-158d-4cae-9c0f-4c68644a5c92")
+	)
+	(text "RX_LO | E2 F2"
+		(at 147.3200 25.4000 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left)
+		)
+		(uuid "92da24e5-7b0b-452a-a054-1fa8bc7db992")
+	)
+	(text "1.3 V"
+		(at 147.3200 30.4800 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "5a2edb49-b319-482f-884a-7677b1c357d1")
+	)
+	(global_label "AD9361_1V3_RX_LO"
+		(shape input)
+		(at 157.4800 35.5600 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "374f78d4-7af9-4f46-be72-e947aee7e538")
+	)
+	(wire
+		(pts
+			(xy 157.4800 35.5600)
+			(xy 157.4800 40.6400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47cfc5e4-9ea8-45ea-a842-493268489ed6")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 157.4800 49.5300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d254cca1-29af-42c9-93ef-5ef25ae74c82")
+		(property "Reference" "C5"
+			(at 160.0200 48.2600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 160.0200 50.8000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.4800 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C322/C323"
+			(at 157.4800 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "E2 F2"
+			(at 157.4800 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "30f59f13-9794-42a5-84f9-f41d42c21200")
+		)
+		(pin "2"
+			(uuid "e1ebac13-9ced-4bee-b09b-7eb2767c2129")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 157.4800 40.6400)
+			(xy 157.4800 45.7200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f68a666c-0922-4c28-9088-2bdb5cfcede9")
+	)
+	(wire
+		(pts
+			(xy 157.4800 53.3400)
+			(xy 157.4800 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "697a33d8-595e-452f-8e69-8a2402e192cc")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 177.8000 49.5300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "84be9539-6bbc-47a9-9b4f-2fdd6499272e")
+		(property "Reference" "C6"
+			(at 180.3400 48.2600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 180.3400 50.8000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8000 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C322/C323"
+			(at 177.8000 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "E2 F2"
+			(at 177.8000 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "09fff99e-12da-4e78-b4ff-0ef701d52981")
+		)
+		(pin "2"
+			(uuid "7e4d1dd3-8227-4acf-81b9-1cb7e9993d58")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 177.8000 40.6400)
+			(xy 177.8000 45.7200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d2873c8-16a0-4f11-8211-79bb633aa2b1")
+	)
+	(wire
+		(pts
+			(xy 177.8000 53.3400)
+			(xy 177.8000 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d4306c4-bfdb-4c16-b1c4-c803cc1a0cb9")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 198.1200 49.5300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f7db8f7-2e43-465c-8aef-15d75f4b28d1")
+		(property "Reference" "C7"
+			(at 200.6600 48.2600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 200.6600 50.8000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.1200 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "UG-570 Rev.A p.120"
+			(at 198.1200 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "E2"
+			(at 198.1200 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6499ca6-3e63-4a66-8dc9-cb6ea7103105")
+		)
+		(pin "2"
+			(uuid "6e9c0531-3a0d-4db3-acc7-429143149dff")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 198.1200 40.6400)
+			(xy 198.1200 45.7200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf69fa3a-0e23-4f85-baad-cdec66e90c4b")
+	)
+	(wire
+		(pts
+			(xy 198.1200 53.3400)
+			(xy 198.1200 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5af355a1-0182-4db2-81ce-d797039044ff")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 218.4400 49.5300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "14808b6d-a193-47f3-b2c2-0c0a7d834687")
+		(property "Reference" "C8"
+			(at 220.9800 48.2600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 220.9800 50.8000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.4400 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "UG-570 Rev.A p.120"
+			(at 218.4400 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "F2"
+			(at 218.4400 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e0f5f1b-0756-4ae3-b328-b44c297a0e3c")
+		)
+		(pin "2"
+			(uuid "741f5526-9747-4d3d-b475-9aeb27e1fb29")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 218.4400 40.6400)
+			(xy 218.4400 45.7200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53b75b35-721a-4fa2-a229-cd6787874e89")
+	)
+	(wire
+		(pts
+			(xy 218.4400 53.3400)
+			(xy 218.4400 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1fc7a87-23d8-4afc-91b0-0f647bfdebac")
+	)
+	(wire
+		(pts
+			(xy 157.4800 40.6400)
+			(xy 177.8000 40.6400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0fd3659-a8a0-43aa-8e55-64466988ae49")
+	)
+	(wire
+		(pts
+			(xy 157.4800 58.4200)
+			(xy 177.8000 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82e1f161-686e-4296-8a91-d7a5d79ccda8")
+	)
+	(wire
+		(pts
+			(xy 177.8000 40.6400)
+			(xy 198.1200 40.6400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8477b91-5015-4b84-bdeb-7e74023adf9b")
+	)
+	(wire
+		(pts
+			(xy 177.8000 58.4200)
+			(xy 198.1200 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61a74c84-a6a6-42d3-889d-2a859c4e6583")
+	)
+	(wire
+		(pts
+			(xy 198.1200 40.6400)
+			(xy 218.4400 40.6400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84f8f93d-174f-49ae-9cae-c246d9ec0fcc")
+	)
+	(wire
+		(pts
+			(xy 198.1200 58.4200)
+			(xy 218.4400 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f05d370b-0640-4f42-b54a-418513023686")
+	)
+	(junction
+		(at 157.4800 40.6400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4320db52-d588-4b2a-804f-34371d83b607")
+	)
+	(junction
+		(at 177.8000 40.6400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a0d5827-af22-452f-8990-707addc36e86")
+	)
+	(junction
+		(at 198.1200 40.6400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3e85d69a-f9ee-4a46-bbc8-e58be149a95c")
+	)
+	(junction
+		(at 177.8000 58.4200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "960d5ca2-b063-4958-bc84-46c169ac1bd1")
+	)
+	(junction
+		(at 198.1200 58.4200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "802d17a5-c0cd-4fbf-b0c0-daebeaa55f52")
+	)
+	(wire
+		(pts
+			(xy 157.4800 58.4200)
+			(xy 157.4800 60.9600)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e71be4d3-069e-4d78-b611-bbd1be514439")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 157.4800 60.9600 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "9090d849-a2e4-4a74-b27e-b77c0d37a8b9")
+		(property "Reference" "#PWR005"
+			(at 160.0200 59.6900 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.0200 62.2300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.4800 60.9600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 157.4800 60.9600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 157.4800 60.9600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0ab737f-ee40-4c2b-8b30-502b30e8a7d0")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "#PWR005")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 157.4800 58.4200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82b3255c-9f9f-44bf-960f-6bd28befa3e1")
+	)
+	(text "RX_TX | D2 D3 E3"
+		(at 274.3200 25.4000 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left)
+		)
+		(uuid "4061694f-fb5f-49db-9522-c07ae68497b2")
+	)
+	(text "1.3 V"
+		(at 274.3200 30.4800 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "e6e0f7b9-67f7-4cc2-aab1-1d923fa34eaf")
+	)
+	(global_label "AD9361_1V3_RX_TX"
+		(shape input)
+		(at 284.4800 35.5600 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "a50997c4-9372-43ae-a823-33b2017bd8bb")
+	)
+	(wire
+		(pts
+			(xy 284.4800 35.5600)
+			(xy 284.4800 40.6400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad7db450-aca5-4442-9e37-ca004cfa669d")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 284.4800 49.5300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f5cbf3e5-bd5e-45d6-bafa-cc287fcd6f3b")
+		(property "Reference" "C9"
+			(at 287.0200 48.2600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 287.0200 50.8000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 284.4800 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C324/C325"
+			(at 284.4800 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "D2 D3 E3"
+			(at 284.4800 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a474464b-bc15-4759-9741-f3e603ab1e19")
+		)
+		(pin "2"
+			(uuid "4bc74d27-30d0-4ca9-b02e-4b1b40733a87")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 284.4800 40.6400)
+			(xy 284.4800 45.7200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea1c737e-097b-4c71-a783-768e9d1348cc")
+	)
+	(wire
+		(pts
+			(xy 284.4800 53.3400)
+			(xy 284.4800 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28b2020a-7190-45fc-845f-2807a1f685f9")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 304.8000 49.5300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dcd6bab7-0dfd-416b-9697-c53dad367c8d")
+		(property "Reference" "C10"
+			(at 307.3400 48.2600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 307.3400 50.8000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 304.8000 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C324/C325"
+			(at 304.8000 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "D2 D3 E3"
+			(at 304.8000 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "016a3c57-9be4-4159-9b4d-5f9e1a30bd5a")
+		)
+		(pin "2"
+			(uuid "0c80376a-b4a8-4c6f-9b98-90f480f6d8ce")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 304.8000 40.6400)
+			(xy 304.8000 45.7200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f63f8d6-4de9-4386-9e57-ce03888affa6")
+	)
+	(wire
+		(pts
+			(xy 304.8000 53.3400)
+			(xy 304.8000 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c2c231d-ec4b-4d7f-8d7b-3a88e725f46e")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 325.1200 49.5300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c07f5fcc-1b77-4104-814c-c781dd5d8fad")
+		(property "Reference" "C11"
+			(at 327.6600 48.2600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 327.6600 50.8000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 325.1200 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "UG-570 Rev.A p.120"
+			(at 325.1200 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "D2"
+			(at 325.1200 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "efe4a204-5516-441c-9744-5d8a815668da")
+		)
+		(pin "2"
+			(uuid "68eb4283-8036-45af-afa2-983defc3f333")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 325.1200 40.6400)
+			(xy 325.1200 45.7200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4988cc4d-9a4f-4f01-98a2-1f9169a1d760")
+	)
+	(wire
+		(pts
+			(xy 325.1200 53.3400)
+			(xy 325.1200 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcb3915c-49d6-45ec-bd70-21fded96bab4")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 345.4400 49.5300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cab3586d-9140-495a-b2aa-e6d0c838e32f")
+		(property "Reference" "C12"
+			(at 347.9800 48.2600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 347.9800 50.8000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 345.4400 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "UG-570 Rev.A p.120"
+			(at 345.4400 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "D3"
+			(at 345.4400 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a669ac46-4c88-4ac2-8d62-205696600a70")
+		)
+		(pin "2"
+			(uuid "d6ad4ffb-2d67-41ff-8c73-8659ae8f421d")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 345.4400 40.6400)
+			(xy 345.4400 45.7200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "838beb91-54ec-4cce-9a48-22b9876215d4")
+	)
+	(wire
+		(pts
+			(xy 345.4400 53.3400)
+			(xy 345.4400 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9889b30c-2583-4372-821d-eb198f46ee16")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 365.7600 49.5300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "06146dda-d005-482b-bef8-25be2be84320")
+		(property "Reference" "C13"
+			(at 368.3000 48.2600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 368.3000 50.8000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 365.7600 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "UG-570 Rev.A p.120"
+			(at 365.7600 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "E3"
+			(at 365.7600 49.5300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "706b0c3f-0f23-46b9-a80a-97d1cfedf1d4")
+		)
+		(pin "2"
+			(uuid "8a3b9731-3a1f-48a5-95f8-bec906d1ab89")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 365.7600 40.6400)
+			(xy 365.7600 45.7200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "682451f0-2b3e-4781-b716-7b7f07212ce9")
+	)
+	(wire
+		(pts
+			(xy 365.7600 53.3400)
+			(xy 365.7600 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ba610ff-eacd-4e20-b833-2ffd3f0171a6")
+	)
+	(wire
+		(pts
+			(xy 284.4800 40.6400)
+			(xy 304.8000 40.6400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "976ce0cb-6191-49bc-8248-907c926bae4e")
+	)
+	(wire
+		(pts
+			(xy 284.4800 58.4200)
+			(xy 304.8000 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be97e727-18a2-4b3e-99a3-a2f982f820ea")
+	)
+	(wire
+		(pts
+			(xy 304.8000 40.6400)
+			(xy 325.1200 40.6400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc30d290-45d3-4d65-9d4e-556255ed0055")
+	)
+	(wire
+		(pts
+			(xy 304.8000 58.4200)
+			(xy 325.1200 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de8c1e16-e866-41fb-8ba6-5b447058c19b")
+	)
+	(wire
+		(pts
+			(xy 325.1200 40.6400)
+			(xy 345.4400 40.6400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9675ddfb-b55f-49dd-8196-0ea594739492")
+	)
+	(wire
+		(pts
+			(xy 325.1200 58.4200)
+			(xy 345.4400 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c30e260e-a803-4ed7-81f7-5d00868ec646")
+	)
+	(wire
+		(pts
+			(xy 345.4400 40.6400)
+			(xy 365.7600 40.6400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f71705de-30c3-4da4-a7c3-e69a58b2637a")
+	)
+	(wire
+		(pts
+			(xy 345.4400 58.4200)
+			(xy 365.7600 58.4200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dce07da-174e-44fe-80ff-ce48bdad553e")
+	)
+	(junction
+		(at 284.4800 40.6400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee65a7a9-4383-4d06-b00f-8670dcfa9ee7")
+	)
+	(junction
+		(at 304.8000 40.6400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02778d9d-15a3-4d7c-9d75-83929af49b22")
+	)
+	(junction
+		(at 325.1200 40.6400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c6cb4083-b988-44ea-abd9-25e2415513d9")
+	)
+	(junction
+		(at 345.4400 40.6400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bae3327c-1ff9-4c48-8076-e24a974033b5")
+	)
+	(junction
+		(at 304.8000 58.4200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4afde1b8-ae95-4288-8ce9-bf9b169b5906")
+	)
+	(junction
+		(at 325.1200 58.4200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13c0aa4c-e638-45f8-bfa6-5e7c601f0588")
+	)
+	(junction
+		(at 345.4400 58.4200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b76c4844-a408-463d-ad5c-f2690c89dd5e")
+	)
+	(wire
+		(pts
+			(xy 284.4800 58.4200)
+			(xy 284.4800 60.9600)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9df768bc-3bc7-48e5-92e1-02efd6c6d16a")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 284.4800 60.9600 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6bd7c73-4e37-4890-a1b4-8ad9eed8f63e")
+		(property "Reference" "#PWR006"
+			(at 287.0200 59.6900 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 287.0200 62.2300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 284.4800 60.9600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 284.4800 60.9600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 284.4800 60.9600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "738d9a4a-0253-4473-b407-10125daaed77")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "#PWR006")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 284.4800 58.4200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f67fd6f3-f130-4bd9-a7e6-7a28d5e3eeb6")
+	)
+	(text "RX_SYNTH | J3"
+		(at 20.3200 76.2000 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left)
+		)
+		(uuid "1cbd1d38-d6bf-41ac-a35d-2fbc8ba57415")
+	)
+	(text "1.3 V"
+		(at 20.3200 81.2800 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "accc8cb6-e913-4534-abfa-84bba17cac41")
+	)
+	(global_label "AD9361_1V3_RX_SYNTH"
+		(shape input)
+		(at 30.4800 86.3600 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "cc5cd23f-469e-405b-ac6b-b6a3d92f5651")
+	)
+	(wire
+		(pts
+			(xy 30.4800 86.3600)
+			(xy 30.4800 91.4400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1eea7b76-dc85-4fd1-bd64-13320aad1e3b")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 30.4800 100.3300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8920901a-7882-454b-99e0-97de663dbe2b")
+		(property "Reference" "C14"
+			(at 33.0200 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 33.0200 101.6000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.4800 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C328/C329"
+			(at 30.4800 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "J3"
+			(at 30.4800 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d9e4d24-8414-4bf6-9b15-dbbe61447776")
+		)
+		(pin "2"
+			(uuid "27405d1b-fbce-4eb8-a9c7-0a8f759db313")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 30.4800 91.4400)
+			(xy 30.4800 96.5200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47bcad09-9e20-462c-937a-3bd5bbc4c769")
+	)
+	(wire
+		(pts
+			(xy 30.4800 104.1400)
+			(xy 30.4800 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "702feca5-f1fc-4f8b-b350-1399c46c0e07")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 50.8000 100.3300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7446974e-0761-462e-8d1a-ef5355abfe71")
+		(property "Reference" "C15"
+			(at 53.3400 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 53.3400 101.6000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8000 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C328/C329"
+			(at 50.8000 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "J3"
+			(at 50.8000 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e792d26-fbfe-453c-9f57-0f01b894354a")
+		)
+		(pin "2"
+			(uuid "fff4899d-ddcc-4d14-8489-dbd400f44cab")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 50.8000 91.4400)
+			(xy 50.8000 96.5200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5006f1a5-5164-481d-b31c-c198618d7d86")
+	)
+	(wire
+		(pts
+			(xy 50.8000 104.1400)
+			(xy 50.8000 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68bc9794-7bec-456a-917c-c3a1f4eea826")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 71.1200 100.3300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "630896d3-7d06-48bb-9680-cb8f34abb281")
+		(property "Reference" "C16"
+			(at 73.6600 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 73.6600 101.6000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.1200 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "UG-570 Rev.A p.120"
+			(at 71.1200 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "J3"
+			(at 71.1200 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0937077b-9e52-412d-9fdb-c0c881096f96")
+		)
+		(pin "2"
+			(uuid "e6cfb3ad-d0fa-4a42-b45c-a2b2d3a4ffeb")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 71.1200 91.4400)
+			(xy 71.1200 96.5200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1110e3ac-0df1-45cb-89ba-3f7127416df5")
+	)
+	(wire
+		(pts
+			(xy 71.1200 104.1400)
+			(xy 71.1200 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0a56c70-f8f6-4e08-811d-0134af972289")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 91.4400 100.3300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c3d8046a-ac15-49af-82a5-68591f970291")
+		(property "Reference" "C17"
+			(at 93.9800 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 93.9800 101.6000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.4400 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "UG-570 Rev.A p.120"
+			(at 91.4400 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "J3"
+			(at 91.4400 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0bcc1397-7554-43e1-ba20-104adc9c2902")
+		)
+		(pin "2"
+			(uuid "731d8f00-ba34-42fb-94fe-a93a45fb8f79")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 91.4400 91.4400)
+			(xy 91.4400 96.5200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02b01341-13f5-45a2-8301-570c1b284e34")
+	)
+	(wire
+		(pts
+			(xy 91.4400 104.1400)
+			(xy 91.4400 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60d2eb36-0f7f-4977-abe1-9aa268f090ad")
+	)
+	(wire
+		(pts
+			(xy 30.4800 91.4400)
+			(xy 50.8000 91.4400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db0d591a-f77e-40a3-926e-bf67455f1961")
+	)
+	(wire
+		(pts
+			(xy 30.4800 109.2200)
+			(xy 50.8000 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "714f78d5-7917-4e89-83fb-ff5db5b31050")
+	)
+	(wire
+		(pts
+			(xy 50.8000 91.4400)
+			(xy 71.1200 91.4400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98167482-10fc-4618-8511-bad0cec1f338")
+	)
+	(wire
+		(pts
+			(xy 50.8000 109.2200)
+			(xy 71.1200 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1c03aee-e4f0-4f0f-ac9f-07bd3d31e19b")
+	)
+	(wire
+		(pts
+			(xy 71.1200 91.4400)
+			(xy 91.4400 91.4400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2d1c0e0-a775-46da-b350-6192349dee23")
+	)
+	(wire
+		(pts
+			(xy 71.1200 109.2200)
+			(xy 91.4400 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ab28841-f102-4801-a8ed-5033effb08f4")
+	)
+	(junction
+		(at 30.4800 91.4400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "178b8a89-d0ea-4156-bca0-d0e92f9a0348")
+	)
+	(junction
+		(at 50.8000 91.4400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7cad753e-dbeb-49d4-8cfb-75fd2214512b")
+	)
+	(junction
+		(at 71.1200 91.4400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de80293d-f1cf-4b0a-89fe-8a6e2aa1cb71")
+	)
+	(junction
+		(at 50.8000 109.2200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4efd0d88-d490-4559-97e5-19ec27ca3d8c")
+	)
+	(junction
+		(at 71.1200 109.2200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d347cf27-0621-4322-9a91-1e6932427e04")
+	)
+	(wire
+		(pts
+			(xy 30.4800 109.2200)
+			(xy 30.4800 111.7600)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b5f50d1-0fd8-4ebc-8ba8-2adf392b488f")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 30.4800 111.7600 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "08a34068-8afa-4a5f-88ab-40dfb06a1580")
+		(property "Reference" "#PWR007"
+			(at 33.0200 110.4900 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.0200 113.0300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.4800 111.7600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 30.4800 111.7600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 30.4800 111.7600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ac41ee89-b9f1-458a-9619-d49e16bda8aa")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "#PWR007")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 30.4800 109.2200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "104a6919-3266-46f0-b7aa-fdd1e3c2e46b")
+	)
+	(text "TX_SYNTH | K3"
+		(at 147.3200 76.2000 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left)
+		)
+		(uuid "0aed6759-dbe3-4658-b0eb-4353a4d990ac")
+	)
+	(text "1.3 V"
+		(at 147.3200 81.2800 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "4e7f4297-1b4d-4902-94a7-e40eb953b07d")
+	)
+	(global_label "AD9361_1V3_TX_SYNTH"
+		(shape input)
+		(at 157.4800 86.3600 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "68e7fc2a-2cdd-4ade-8a96-9781d92ebc5a")
+	)
+	(wire
+		(pts
+			(xy 157.4800 86.3600)
+			(xy 157.4800 91.4400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6c704dd-8b79-43c3-b3eb-c645c395f79b")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 157.4800 100.3300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "614b19d5-8d75-41f6-bf9e-25f57d579b89")
+		(property "Reference" "C18"
+			(at 160.0200 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 160.0200 101.6000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.4800 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C326/C327"
+			(at 157.4800 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "K3"
+			(at 157.4800 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "26bf5bdd-3be9-4d08-845f-142cb8dd43a5")
+		)
+		(pin "2"
+			(uuid "8d8c4092-2dd3-421b-8558-c94533122a54")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 157.4800 91.4400)
+			(xy 157.4800 96.5200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2e715b8-c838-4368-a12b-e1d982f7b8b0")
+	)
+	(wire
+		(pts
+			(xy 157.4800 104.1400)
+			(xy 157.4800 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c02d2e0-de17-4101-88d8-a61e140ef032")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 177.8000 100.3300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "23b0b594-bbb0-48ca-bd20-f0f0f1b2e20a")
+		(property "Reference" "C19"
+			(at 180.3400 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 180.3400 101.6000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8000 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C326/C327"
+			(at 177.8000 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "K3"
+			(at 177.8000 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "120da27a-a9ec-4660-b2d9-e584d63fa3a1")
+		)
+		(pin "2"
+			(uuid "be5b9433-2f9b-4215-b1a6-17eb5f72d830")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 177.8000 91.4400)
+			(xy 177.8000 96.5200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20681766-2fec-43d2-b074-2aa3f51fb5dc")
+	)
+	(wire
+		(pts
+			(xy 177.8000 104.1400)
+			(xy 177.8000 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb88d2c9-2fbe-4370-94ec-646b43b7e5ff")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 198.1200 100.3300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6554eef8-b23b-469b-af91-9f0e82b880f6")
+		(property "Reference" "C20"
+			(at 200.6600 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 200.6600 101.6000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.1200 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "UG-570 Rev.A p.120"
+			(at 198.1200 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "K3"
+			(at 198.1200 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bfe60b51-7e82-4bd8-953a-82926af1cdee")
+		)
+		(pin "2"
+			(uuid "3932bfa1-0d31-4c88-adb8-366ee976e3c2")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 198.1200 91.4400)
+			(xy 198.1200 96.5200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c24fe1eb-bda4-4803-bdf5-b8fac8f4c0b9")
+	)
+	(wire
+		(pts
+			(xy 198.1200 104.1400)
+			(xy 198.1200 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc4f6428-5cd6-4ca9-91ae-ac1bc4ad71f5")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 218.4400 100.3300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1deb2696-55ad-4195-852c-2344fb7db23d")
+		(property "Reference" "C21"
+			(at 220.9800 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 220.9800 101.6000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.4400 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "UG-570 Rev.A p.120"
+			(at 218.4400 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "K3"
+			(at 218.4400 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "77ff1db7-b243-4581-b229-dcdd7a859b6e")
+		)
+		(pin "2"
+			(uuid "aff39cc8-098f-4dd5-9ba2-fcf4ddee66a1")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 218.4400 91.4400)
+			(xy 218.4400 96.5200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "606ef4a0-d319-44b1-bc6c-a6cfaaefb90c")
+	)
+	(wire
+		(pts
+			(xy 218.4400 104.1400)
+			(xy 218.4400 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da523f31-7d7b-429f-9e08-8de81c54a2e5")
+	)
+	(wire
+		(pts
+			(xy 157.4800 91.4400)
+			(xy 177.8000 91.4400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee921cae-671d-4da3-a8bf-fabd0366e114")
+	)
+	(wire
+		(pts
+			(xy 157.4800 109.2200)
+			(xy 177.8000 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3065ebf3-b86f-45ac-a52a-1c9b30bc8b4e")
+	)
+	(wire
+		(pts
+			(xy 177.8000 91.4400)
+			(xy 198.1200 91.4400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d35f38b-95e8-4c76-84e9-4fa8e707653e")
+	)
+	(wire
+		(pts
+			(xy 177.8000 109.2200)
+			(xy 198.1200 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d654f0b-0540-422b-b229-03f955915c00")
+	)
+	(wire
+		(pts
+			(xy 198.1200 91.4400)
+			(xy 218.4400 91.4400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a6b02f4-ec4a-4d2e-bb5a-6d78fa05e79a")
+	)
+	(wire
+		(pts
+			(xy 198.1200 109.2200)
+			(xy 218.4400 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f76ecb31-69a7-46e1-bdcb-5eec2a5c273b")
+	)
+	(junction
+		(at 157.4800 91.4400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4d21f89-c641-4e19-bfa8-fa724f41f77f")
+	)
+	(junction
+		(at 177.8000 91.4400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad544b59-4f9f-4085-abc9-9237bf32a4d1")
+	)
+	(junction
+		(at 198.1200 91.4400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "790afb34-42e0-4209-be2e-c863673f2122")
+	)
+	(junction
+		(at 177.8000 109.2200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29068999-d64c-4b6c-8ae2-7dc3be8996fd")
+	)
+	(junction
+		(at 198.1200 109.2200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3c39205-477c-421b-92e3-808cdede3f7d")
+	)
+	(wire
+		(pts
+			(xy 157.4800 109.2200)
+			(xy 157.4800 111.7600)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "894c7343-d41f-49a4-886f-0e1287afb593")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 157.4800 111.7600 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a87de68-e450-4f07-8ab6-15e5a5fadf14")
+		(property "Reference" "#PWR008"
+			(at 160.0200 110.4900 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.0200 113.0300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.4800 111.7600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 157.4800 111.7600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 157.4800 111.7600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe15ba9e-4706-46ef-bd25-5d43ce0b8405")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "#PWR008")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 157.4800 109.2200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a7c7fdc-bf9a-448b-b98e-1004b99a6246")
+	)
+	(text "DIG | F12"
+		(at 274.3200 76.2000 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left)
+		)
+		(uuid "11e7242b-7c8a-41af-ab6b-3d4815de0028")
+	)
+	(text "1.3 V"
+		(at 274.3200 81.2800 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "86ea394d-1819-4266-a747-a7300961c36e")
+	)
+	(global_label "AD9361_1V3_DIG"
+		(shape input)
+		(at 284.4800 86.3600 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "fd9b4a4f-8297-4b3b-8fed-f99851c7ba92")
+	)
+	(wire
+		(pts
+			(xy 284.4800 86.3600)
+			(xy 284.4800 91.4400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78ca49df-14ad-4e77-8821-0a2d45c77204")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 284.4800 100.3300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b90ab4c-6b8a-4211-aafb-256e09d0a073")
+		(property "Reference" "C22"
+			(at 287.0200 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 287.0200 101.6000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 284.4800 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C330/C331"
+			(at 284.4800 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "F12"
+			(at 284.4800 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "046f1e84-20ad-45ca-ad19-b1a0a26e70ea")
+		)
+		(pin "2"
+			(uuid "cc4e9547-1f8c-4417-a3c2-18575810a515")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 284.4800 91.4400)
+			(xy 284.4800 96.5200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0ac4543-8030-4d8b-840f-6b15f44c0277")
+	)
+	(wire
+		(pts
+			(xy 284.4800 104.1400)
+			(xy 284.4800 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84318041-7942-44e0-9164-b08ffa33eb69")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 304.8000 100.3300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2cdf75f8-210e-424a-b5ad-4ac11e56834d")
+		(property "Reference" "C23"
+			(at 307.3400 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 307.3400 101.6000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 304.8000 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C330/C331"
+			(at 304.8000 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "F12"
+			(at 304.8000 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43e2e3f0-2418-4ab2-8dc7-8e7e552e6f88")
+		)
+		(pin "2"
+			(uuid "ce342360-b08f-4793-be8f-8a3e7cddaec3")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 304.8000 91.4400)
+			(xy 304.8000 96.5200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05018cbb-d598-4a44-98f8-1ea5a5a6d0d3")
+	)
+	(wire
+		(pts
+			(xy 304.8000 104.1400)
+			(xy 304.8000 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ae5d4f2-9d4a-4310-b9ff-b4dc83c92696")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 325.1200 100.3300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e5e2bdcb-749c-465e-96c1-aadfc4df614e")
+		(property "Reference" "C24"
+			(at 327.6600 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 327.6600 101.6000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 325.1200 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "UG-570 Rev.A p.120"
+			(at 325.1200 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "F12"
+			(at 325.1200 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "11f287d7-f18c-40a3-bc56-d8ea96e9b502")
+		)
+		(pin "2"
+			(uuid "7f7ca3ea-f4f2-4d36-aaf6-ee41f13235e6")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 325.1200 91.4400)
+			(xy 325.1200 96.5200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bddb7ce-1e9a-4f3e-8960-206f5f0c4169")
+	)
+	(wire
+		(pts
+			(xy 325.1200 104.1400)
+			(xy 325.1200 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c5046a7-209b-4761-80c9-2d9b0fe3c58e")
+	)
+	(wire
+		(pts
+			(xy 284.4800 91.4400)
+			(xy 304.8000 91.4400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49d0b9a3-3f90-489b-8b7c-90c0969c5162")
+	)
+	(wire
+		(pts
+			(xy 284.4800 109.2200)
+			(xy 304.8000 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8502adf7-2833-4463-b8fc-e84f09e54d71")
+	)
+	(wire
+		(pts
+			(xy 304.8000 91.4400)
+			(xy 325.1200 91.4400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d5f1807-be12-4116-be6e-aa19fad79eef")
+	)
+	(wire
+		(pts
+			(xy 304.8000 109.2200)
+			(xy 325.1200 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47809493-62aa-4122-9b1a-3374d414fc8c")
+	)
+	(junction
+		(at 284.4800 91.4400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab065fe2-2f37-4f4d-a234-cb091f926f79")
+	)
+	(junction
+		(at 304.8000 91.4400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "61e8c010-7507-41b2-8fec-c7c7f4aa664a")
+	)
+	(junction
+		(at 304.8000 109.2200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "745acdcf-9303-48cd-9df0-daec01ab57f8")
+	)
+	(wire
+		(pts
+			(xy 284.4800 109.2200)
+			(xy 284.4800 111.7600)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ab5e73c-8103-4a9a-867a-435542d59705")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 284.4800 111.7600 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "621f63f9-6e23-44d1-894d-fc88c47aacbe")
+		(property "Reference" "#PWR009"
+			(at 287.0200 110.4900 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 287.0200 113.0300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 284.4800 111.7600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 284.4800 111.7600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 284.4800 111.7600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d9e621a-0ebf-444d-8bbf-de8b2aa0597a")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "#PWR009")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 284.4800 109.2200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "065b0c66-9dd9-4971-b018-c5105a6955e6")
+	)
+	(text "BB | K4"
+		(at 20.3200 127.0000 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left)
+		)
+		(uuid "ee778b3f-707a-4d80-9d50-b0f63d401fda")
+	)
+	(text "1.3 V"
+		(at 20.3200 132.0800 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "e5d3beb5-ce3c-439c-bb9a-4d9c0ceab5a4")
+	)
+	(global_label "AD9361_1V3_BB"
+		(shape input)
+		(at 30.4800 137.1600 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "76f6ffa3-3701-4f3f-b49a-d8d253336388")
+	)
+	(wire
+		(pts
+			(xy 30.4800 137.1600)
+			(xy 30.4800 142.2400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92e757b5-9531-4779-9577-94c160874d89")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 30.4800 151.1300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "866027c2-77ea-4310-b2fb-9cbe944d62e1")
+		(property "Reference" "C25"
+			(at 33.0200 149.8600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 33.0200 152.4000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.4800 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C332/C333"
+			(at 30.4800 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "K4"
+			(at 30.4800 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c88343a7-72f0-46b9-9bb5-ede567aed52d")
+		)
+		(pin "2"
+			(uuid "efed68e2-a03c-4031-ba5c-c1a157332a81")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 30.4800 142.2400)
+			(xy 30.4800 147.3200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39f1eb2a-7cd0-4e4a-bf13-08ec66644b2e")
+	)
+	(wire
+		(pts
+			(xy 30.4800 154.9400)
+			(xy 30.4800 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40dcbf27-20c4-477e-bd36-6c1bc3b1f276")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 50.8000 151.1300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae2f39e2-7e21-49a6-a80a-ec859bb3620b")
+		(property "Reference" "C26"
+			(at 53.3400 149.8600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 53.3400 152.4000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8000 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C332/C333"
+			(at 50.8000 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "K4"
+			(at 50.8000 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7f3bdbc-f497-4204-bb2b-62e42917cd8c")
+		)
+		(pin "2"
+			(uuid "d2198a14-c5eb-4278-8bda-bbc8192c178f")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 50.8000 142.2400)
+			(xy 50.8000 147.3200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f294f87-2cb7-49c6-95cf-0828c2c07e23")
+	)
+	(wire
+		(pts
+			(xy 50.8000 154.9400)
+			(xy 50.8000 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6216a812-a08a-4fe3-aaab-b53d7a825d3a")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 71.1200 151.1300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68008bf0-5c04-4db6-b3a5-b18f4d652913")
+		(property "Reference" "C27"
+			(at 73.6600 149.8600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 73.6600 152.4000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.1200 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "UG-570 Rev.A p.120"
+			(at 71.1200 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "K4"
+			(at 71.1200 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69747234-f22f-4567-81a4-f97a9d32b488")
+		)
+		(pin "2"
+			(uuid "82cba889-4ac7-42c9-aa7c-ab62955e37cd")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 71.1200 142.2400)
+			(xy 71.1200 147.3200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12290417-e902-4853-9d17-3b774d576e6f")
+	)
+	(wire
+		(pts
+			(xy 71.1200 154.9400)
+			(xy 71.1200 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97098a07-4cd7-4e90-b38e-66a30f5eff3d")
+	)
+	(wire
+		(pts
+			(xy 30.4800 142.2400)
+			(xy 50.8000 142.2400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "417c0cb1-b686-4a39-a568-7978708c0ca0")
+	)
+	(wire
+		(pts
+			(xy 30.4800 160.0200)
+			(xy 50.8000 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a424ef4-ea70-4cc3-9bdc-a1b2ee985440")
+	)
+	(wire
+		(pts
+			(xy 50.8000 142.2400)
+			(xy 71.1200 142.2400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a823abb5-e3d8-4bc0-bf4a-a4bcdad86e80")
+	)
+	(wire
+		(pts
+			(xy 50.8000 160.0200)
+			(xy 71.1200 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07506467-eee5-4716-a5e4-083307104dc5")
+	)
+	(junction
+		(at 30.4800 142.2400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "225c843a-da54-4c96-a8cd-6c37aeb5efc4")
+	)
+	(junction
+		(at 50.8000 142.2400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce0f0041-06d2-4571-b239-94eb1f9b1bbf")
+	)
+	(junction
+		(at 50.8000 160.0200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ffeaaa70-36fe-4857-833e-f6698181b2e2")
+	)
+	(wire
+		(pts
+			(xy 30.4800 160.0200)
+			(xy 30.4800 162.5600)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eeb84fd4-70fe-47b3-8e81-22ace25b01fe")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 30.4800 162.5600 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "6007e09c-1fce-4b53-91b8-311e0d8e6f01")
+		(property "Reference" "#PWR010"
+			(at 33.0200 161.2900 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.0200 163.8300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.4800 162.5600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 30.4800 162.5600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 30.4800 162.5600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8941dbc-bc13-45bb-8e14-f125e3fccbf8")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 30.4800 160.0200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eba5d4b3-e544-4faf-816d-bc77418350a2")
+	)
+	(text "GPO | B8"
+		(at 147.3200 127.0000 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left)
+		)
+		(uuid "a6ed567f-3c86-41e2-b661-ec5926f3c253")
+	)
+	(text "TBD: 2.5-3.3 V used; 1.3 V unused"
+		(at 147.3200 132.0800 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "74980530-577f-4272-81bb-e46bed617bc9")
+	)
+	(global_label "AD9361_VDD_GPO_TBD"
+		(shape input)
+		(at 157.4800 137.1600 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "bc252d5d-de06-4e6b-a38b-cb8add7dee27")
+	)
+	(wire
+		(pts
+			(xy 157.4800 137.1600)
+			(xy 157.4800 142.2400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4423eb4d-dca6-4b4c-bf3f-c79bec288e81")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 157.4800 151.1300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5090a229-31f9-4182-80d8-8b69137b7eae")
+		(property "Reference" "C28"
+			(at 160.0200 149.8600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 160.0200 152.4000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.4800 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C358-C361"
+			(at 157.4800 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "B8"
+			(at 157.4800 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "284266e5-22a0-4659-9287-8407b6b5b0d0")
+		)
+		(pin "2"
+			(uuid "16027ed8-2b54-42e2-aaf9-5a5159a4576e")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 157.4800 142.2400)
+			(xy 157.4800 147.3200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf32b95c-a775-45fb-8ef8-909869c87ddb")
+	)
+	(wire
+		(pts
+			(xy 157.4800 154.9400)
+			(xy 157.4800 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b74a7075-95c0-4741-bb83-bff89c3e938a")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 177.8000 151.1300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e04836a0-a2eb-47cd-b931-ab31c4d4a16a")
+		(property "Reference" "C29"
+			(at 180.3400 149.8600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 180.3400 152.4000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8000 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C358-C361"
+			(at 177.8000 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "B8"
+			(at 177.8000 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6963c8e2-9b60-4473-bb49-0cf88f9fd2b7")
+		)
+		(pin "2"
+			(uuid "37557add-2157-49a3-84f2-050ebe9d5add")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 177.8000 142.2400)
+			(xy 177.8000 147.3200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc6b9cbd-fd85-4fc5-82f6-5a1c7f7b09a5")
+	)
+	(wire
+		(pts
+			(xy 177.8000 154.9400)
+			(xy 177.8000 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ef85088-2645-43a4-82c8-42ddf1c17c82")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 198.1200 151.1300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "babb3a28-1fda-490c-baef-08a61d90e9bb")
+		(property "Reference" "C30"
+			(at 200.6600 149.8600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 200.6600 152.4000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.1200 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C358-C361"
+			(at 198.1200 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "B8"
+			(at 198.1200 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b984b6a-d15c-47a8-9d7a-56605afc96fb")
+		)
+		(pin "2"
+			(uuid "efe42f1c-af07-47eb-9eb9-6e6d8f517072")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 198.1200 142.2400)
+			(xy 198.1200 147.3200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "300d31d2-41c7-4466-8593-3b9c750a1642")
+	)
+	(wire
+		(pts
+			(xy 198.1200 154.9400)
+			(xy 198.1200 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83c92244-36ea-4139-9b8f-4d3ec9274729")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 218.4400 151.1300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3788edcc-ca1d-4499-8b8f-36ac3b4413c5")
+		(property "Reference" "C31"
+			(at 220.9800 149.8600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 220.9800 152.4000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.4400 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C358-C361"
+			(at 218.4400 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "B8"
+			(at 218.4400 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e41d522d-59a7-4243-ae75-4d75b7087ea7")
+		)
+		(pin "2"
+			(uuid "80122c63-c00c-4483-90ca-b947c52609ec")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 218.4400 142.2400)
+			(xy 218.4400 147.3200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee3f2106-31a4-45f5-9dae-b7d0d8d15761")
+	)
+	(wire
+		(pts
+			(xy 218.4400 154.9400)
+			(xy 218.4400 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf0849e5-c4da-4312-a95d-de6865d3759f")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 238.7600 151.1300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "defaa788-8616-4b42-99ae-2a1c6b873e92")
+		(property "Reference" "C32"
+			(at 241.3000 149.8600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 241.3000 152.4000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.7600 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "UG-570 Rev.A p.120"
+			(at 238.7600 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "B8"
+			(at 238.7600 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83d74d1e-fc8e-4f8f-86c1-f6e955090bbc")
+		)
+		(pin "2"
+			(uuid "dfa65d8c-4b6c-45d9-b75d-658d0f04180f")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 238.7600 142.2400)
+			(xy 238.7600 147.3200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef86f288-3b31-4a8e-b422-76c82e3ed5ae")
+	)
+	(wire
+		(pts
+			(xy 238.7600 154.9400)
+			(xy 238.7600 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28e23b8f-f0c5-4dc8-89e7-5d807db8cb0a")
+	)
+	(wire
+		(pts
+			(xy 157.4800 142.2400)
+			(xy 177.8000 142.2400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df69e0c6-426e-4f14-ba7f-97a36d97ef30")
+	)
+	(wire
+		(pts
+			(xy 157.4800 160.0200)
+			(xy 177.8000 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b2bc39b-eae2-4d72-822d-598ccfc79130")
+	)
+	(wire
+		(pts
+			(xy 177.8000 142.2400)
+			(xy 198.1200 142.2400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4214034e-1582-473e-bc54-c93ec4938324")
+	)
+	(wire
+		(pts
+			(xy 177.8000 160.0200)
+			(xy 198.1200 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a58caa4d-ea6c-466d-8169-dd40fbedb91a")
+	)
+	(wire
+		(pts
+			(xy 198.1200 142.2400)
+			(xy 218.4400 142.2400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51138cdc-4025-4b44-8e2c-a6e7664985a3")
+	)
+	(wire
+		(pts
+			(xy 198.1200 160.0200)
+			(xy 218.4400 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64218578-a104-41bf-844b-966450b6edcd")
+	)
+	(wire
+		(pts
+			(xy 218.4400 142.2400)
+			(xy 238.7600 142.2400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa9889ed-baf8-4685-bc9a-fd0de7a2647a")
+	)
+	(wire
+		(pts
+			(xy 218.4400 160.0200)
+			(xy 238.7600 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "effa2e52-4b78-4dc6-9d2d-68dde27832e7")
+	)
+	(junction
+		(at 157.4800 142.2400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c7ae291-c333-4d7b-b30d-b12466da2033")
+	)
+	(junction
+		(at 177.8000 142.2400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b5edb4a9-d5c9-4517-bf8e-55cf9f381b70")
+	)
+	(junction
+		(at 198.1200 142.2400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eec0e5ce-de4f-419d-8757-a8582d9e5892")
+	)
+	(junction
+		(at 218.4400 142.2400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c0abe16-ee87-49e3-9e34-c84368c780d1")
+	)
+	(junction
+		(at 177.8000 160.0200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9432e5be-6e31-4ae8-8eef-d1dc38c67a91")
+	)
+	(junction
+		(at 198.1200 160.0200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "34bb63b8-73cf-4ea6-89c2-986412c37320")
+	)
+	(junction
+		(at 218.4400 160.0200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b36f32e-2584-483f-a546-761aa22dbf6e")
+	)
+	(wire
+		(pts
+			(xy 157.4800 160.0200)
+			(xy 157.4800 162.5600)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "130edc9b-26fe-4580-baa0-54f867e83bbd")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 157.4800 162.5600 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "d359e122-5ade-4631-9b41-1a0904c988d2")
+		(property "Reference" "#PWR011"
+			(at 160.0200 161.2900 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.0200 163.8300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.4800 162.5600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 157.4800 162.5600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 157.4800 162.5600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "315e5e12-8ab4-4720-9ee8-db94ded19b1c")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 157.4800 160.0200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "72b314aa-2613-45d9-985d-15d07e7dff98")
+	)
+	(text "INTERFACE | H12"
+		(at 274.3200 127.0000 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left)
+		)
+		(uuid "2371e6d7-d30f-4501-a000-325782731d15")
+	)
+	(text "1.8 V; future Zynq bank must match"
+		(at 274.3200 132.0800 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "11e516e8-55b4-4191-aa95-0c2c60abc383")
+	)
+	(global_label "AD9361_VDD_INTERFACE_1V8"
+		(shape input)
+		(at 284.4800 137.1600 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "60b5f514-b852-4adc-8761-337c2f0b8be9")
+	)
+	(wire
+		(pts
+			(xy 284.4800 137.1600)
+			(xy 284.4800 142.2400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a20c72ef-0df7-480a-961b-3987815ad0b8")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 284.4800 151.1300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37beb53e-34c1-4fff-8af2-bb147c77a9ca")
+		(property "Reference" "C33"
+			(at 287.0200 149.8600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 287.0200 152.4000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 284.4800 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C354-C357"
+			(at 284.4800 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "H12"
+			(at 284.4800 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b0ef81c-0eef-4dce-92f4-46062c3149fa")
+		)
+		(pin "2"
+			(uuid "23e16640-36d2-46f2-96ed-464719f33062")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 284.4800 142.2400)
+			(xy 284.4800 147.3200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2759328-e249-4787-b987-f83521598b3f")
+	)
+	(wire
+		(pts
+			(xy 284.4800 154.9400)
+			(xy 284.4800 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ccb692c-4ffa-496e-b156-c4084f5c882b")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 304.8000 151.1300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3203facd-f9b6-4697-989a-aaa0dda7a386")
+		(property "Reference" "C34"
+			(at 307.3400 149.8600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 307.3400 152.4000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 304.8000 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C354-C357"
+			(at 304.8000 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "H12"
+			(at 304.8000 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c9fdcf7-3c7b-478f-9571-f89c358cd142")
+		)
+		(pin "2"
+			(uuid "94f72ca5-160f-4fdd-a873-de6543d65fb6")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 304.8000 142.2400)
+			(xy 304.8000 147.3200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eefde996-a847-4a9d-829a-cf9e58ff7f2c")
+	)
+	(wire
+		(pts
+			(xy 304.8000 154.9400)
+			(xy 304.8000 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4572f535-8a77-45ca-9d0d-ecd7814218fd")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 325.1200 151.1300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73a827b1-7c96-4165-b9f6-ee294168c423")
+		(property "Reference" "C35"
+			(at 327.6600 149.8600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 327.6600 152.4000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 325.1200 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C354-C357"
+			(at 325.1200 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "H12"
+			(at 325.1200 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94cc440f-1023-4813-aef3-d85a703d6d6a")
+		)
+		(pin "2"
+			(uuid "86753d75-0b62-4ef9-9d81-e84b00852211")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 325.1200 142.2400)
+			(xy 325.1200 147.3200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3bdd4ad-b33b-47d2-9199-7ef1323e8e61")
+	)
+	(wire
+		(pts
+			(xy 325.1200 154.9400)
+			(xy 325.1200 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5a273dd-ddea-476c-9831-d2442faaf39b")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 345.4400 151.1300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "91dc2c73-3547-435e-bcde-80c2f535968b")
+		(property "Reference" "C36"
+			(at 347.9800 149.8600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 347.9800 152.4000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 345.4400 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet4 C354-C357"
+			(at 345.4400 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "H12"
+			(at 345.4400 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d18cfe7b-cfbe-4ee7-b81d-e4602dcf5885")
+		)
+		(pin "2"
+			(uuid "2a88dd74-6d0d-426a-ba08-1c1de1177c81")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 345.4400 142.2400)
+			(xy 345.4400 147.3200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36240570-524c-4613-9105-bf94501f0f97")
+	)
+	(wire
+		(pts
+			(xy 345.4400 154.9400)
+			(xy 345.4400 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "340e1526-3e00-4786-8761-0d25fcd952af")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 365.7600 151.1300 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a28122e1-3746-486d-a91f-0722bc98d012")
+		(property "Reference" "C37"
+			(at 368.3000 149.8600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 368.3000 152.4000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 365.7600 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "UG-570 Rev.A p.120"
+			(at 365.7600 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "H12"
+			(at 365.7600 151.1300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1fc3389c-7dfb-47b7-b5c7-57508c07aef6")
+		)
+		(pin "2"
+			(uuid "6f87dc5a-ecf9-459e-a19a-24f02751c104")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 365.7600 142.2400)
+			(xy 365.7600 147.3200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1388e5a-9d0e-465a-9ca9-5c6dc8a5e869")
+	)
+	(wire
+		(pts
+			(xy 365.7600 154.9400)
+			(xy 365.7600 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aca7b3d7-ff97-4d24-8a5b-b04f07cf9485")
+	)
+	(wire
+		(pts
+			(xy 284.4800 142.2400)
+			(xy 304.8000 142.2400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34ca466a-a1b0-412e-b58f-bd364986395c")
+	)
+	(wire
+		(pts
+			(xy 284.4800 160.0200)
+			(xy 304.8000 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3233e13c-1f2b-4530-a7b1-346238c7ba78")
+	)
+	(wire
+		(pts
+			(xy 304.8000 142.2400)
+			(xy 325.1200 142.2400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06869815-f449-473d-ab0e-9020dfeaacf7")
+	)
+	(wire
+		(pts
+			(xy 304.8000 160.0200)
+			(xy 325.1200 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c8d2fcf-0fc1-474e-bfd5-069ccb4d63b4")
+	)
+	(wire
+		(pts
+			(xy 325.1200 142.2400)
+			(xy 345.4400 142.2400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "320ccbbc-555f-45db-abf8-5ee1694bc01e")
+	)
+	(wire
+		(pts
+			(xy 325.1200 160.0200)
+			(xy 345.4400 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2effe3a-726b-4d0d-9f47-cc7eefc51e51")
+	)
+	(wire
+		(pts
+			(xy 345.4400 142.2400)
+			(xy 365.7600 142.2400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de45b7e6-7137-47d6-aa3f-438c4b5bb8a0")
+	)
+	(wire
+		(pts
+			(xy 345.4400 160.0200)
+			(xy 365.7600 160.0200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66986571-ef70-492c-a58b-e7fb92cf9151")
+	)
+	(junction
+		(at 284.4800 142.2400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33251706-aebb-4f40-8c42-e24784128d93")
+	)
+	(junction
+		(at 304.8000 142.2400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0a4e6346-9eef-4a66-b107-d5c9eec9198f")
+	)
+	(junction
+		(at 325.1200 142.2400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f584f7c-7c6b-4d4a-a1e8-1ce690b584c6")
+	)
+	(junction
+		(at 345.4400 142.2400)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b93b8f8d-69d1-46cd-832e-d9147d95631e")
+	)
+	(junction
+		(at 304.8000 160.0200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19382829-2b6c-4c48-bb22-8e407ce213b5")
+	)
+	(junction
+		(at 325.1200 160.0200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1165cb8f-a305-43c6-b7eb-7394c6cae171")
+	)
+	(junction
+		(at 345.4400 160.0200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5fa23ba2-8dca-4275-9c97-05bd5934f464")
+	)
+	(wire
+		(pts
+			(xy 284.4800 160.0200)
+			(xy 284.4800 162.5600)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e008cf28-a7a6-4db4-908f-d7ab19a73d42")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 284.4800 162.5600 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "c8e0346c-29b6-4a25-bd9e-bd36271e126d")
+		(property "Reference" "#PWR012"
+			(at 287.0200 161.2900 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 287.0200 163.8300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 284.4800 162.5600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 284.4800 162.5600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 284.4800 162.5600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06683e75-f357-4bb5-9a6a-4c011daaaf6e")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 284.4800 160.0200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a784975-8678-4823-81a2-3dfca5b54a23")
+	)
+	(text "TX VCO | B11 A11"
+		(at 20.3200 182.8800 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left)
+		)
+		(uuid "133a0d66-b2fb-44ef-9278-d12b93e80417")
+	)
+	(text "Internal LDO only; no external 1.3 V"
+		(at 20.3200 187.9600 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "664b6ab3-73cc-4172-8d1b-71973eda1e34")
+	)
+	(global_label "AD9361_TX_VCO_1V1"
+		(shape input)
+		(at 30.4800 193.0400 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "ed99462e-cff3-4805-9fd9-7e638a95bfae")
+	)
+	(wire
+		(pts
+			(xy 30.4800 193.0400)
+			(xy 30.4800 198.1200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b76363f-b18d-4316-8993-f43ba8619dd2")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 30.4800 207.0100 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "69598322-b486-4c8e-b186-9c75ded4d4cc")
+		(property "Reference" "C38"
+			(at 33.0200 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1n"
+			(at 33.0200 208.2800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.4800 207.0100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet2 C104/R123/C105; DS Rev.G pp.18-19; UG-570 Rev.A pp.120,124"
+			(at 30.4800 207.0100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "B11 A11"
+			(at 30.4800 207.0100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa857311-b7fd-4cb6-8f83-cc64d12b1846")
+		)
+		(pin "2"
+			(uuid "2b38540d-00bb-4393-9807-e30a39460e02")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 30.4800 198.1200)
+			(xy 30.4800 203.2000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebe843fe-e290-4417-bb2d-a2a7ca7781d2")
+	)
+	(wire
+		(pts
+			(xy 30.4800 210.8200)
+			(xy 30.4800 226.0600)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d985493-894c-4588-83aa-491dbebdf168")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 30.4800 226.0600 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "30f360e6-3cc2-4b16-bd0e-6f967ed98cb2")
+		(property "Reference" "#PWR013"
+			(at 33.0200 224.7900 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.0200 227.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.4800 226.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 30.4800 226.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 30.4800 226.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89f5485e-c5a7-4f69-bba4-fc9e16078908")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 30.4800 198.1200)
+			(xy 66.0400 198.1200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a28ca7b-8020-4db1-9b74-4b324a14534e")
+	)
+	(junction
+		(at 30.4800 198.1200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "61113df6-fbf2-49b9-b82c-37b15620cea0")
+	)
+	(symbol
+		(lib_id "mesh_radio:R")
+		(at 66.0400 203.2000 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b80e9a4-5f6f-4c3c-9d8b-b82688791516")
+		(property "Reference" "R2"
+			(at 68.5800 201.9300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1R"
+			(at 68.5800 204.4700 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.0400 203.2000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet2 C104/R123/C105; DS Rev.G pp.18-19; UG-570 Rev.A pp.120,124"
+			(at 66.0400 203.2000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "B11 A11"
+			(at 66.0400 203.2000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2de5315d-688f-4dee-ab39-922366d87ac8")
+		)
+		(pin "2"
+			(uuid "edf89363-522a-4953-b783-87ce53503a3c")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 66.0400 198.1200)
+			(xy 66.0400 199.3900)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3965432f-3946-47ae-83cd-1d19b5d86905")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 66.0400 217.1700 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c6489741-6050-43ac-bc7d-6687cb56dc27")
+		(property "Reference" "C39"
+			(at 68.5800 215.9000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 68.5800 218.4400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.0400 217.1700 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet2 C104/R123/C105; DS Rev.G pp.18-19; UG-570 Rev.A pp.120,124"
+			(at 66.0400 217.1700 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "B11 A11"
+			(at 66.0400 217.1700 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d4c9e74-a5d5-4c55-80b9-b01f0af27517")
+		)
+		(pin "2"
+			(uuid "feee4d5c-f013-44f3-844d-a112785f8c41")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 66.0400 207.0100)
+			(xy 66.0400 213.3600)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c52f9241-61c8-4f7f-ac6a-4c8f0219b422")
+	)
+	(wire
+		(pts
+			(xy 66.0400 220.9800)
+			(xy 66.0400 226.0600)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9f04919-e39b-4754-a1dc-6baab2e57394")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 66.0400 226.0600 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "aec9437b-72a4-429c-b20d-1a4cca9561b0")
+		(property "Reference" "#PWR014"
+			(at 68.5800 224.7900 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 68.5800 227.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.0400 226.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 66.0400 226.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 66.0400 226.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f1be620-accc-45b9-9ecf-48819f1db074")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "RX VCO | G2 G3"
+		(at 147.3200 182.8800 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left)
+		)
+		(uuid "3fddae17-1e35-4860-9971-f4e8b8d67095")
+	)
+	(text "Internal LDO only; no external 1.3 V"
+		(at 147.3200 187.9600 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "cd5aa23b-ee2c-4f4d-bca4-b7e9e945ff1e")
+	)
+	(global_label "AD9361_RX_VCO_1V1"
+		(shape input)
+		(at 157.4800 193.0400 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "f8599fe4-a7ad-4035-9595-78b1c18d2198")
+	)
+	(wire
+		(pts
+			(xy 157.4800 193.0400)
+			(xy 157.4800 198.1200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14d378b1-c054-4f7f-b960-3ccf5620acf3")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 157.4800 207.0100 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8f904483-417b-4fcb-a368-07b7a8525267")
+		(property "Reference" "C40"
+			(at 160.0200 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1n"
+			(at 160.0200 208.2800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.4800 207.0100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet2 C116/R124/C117; DS Rev.G pp.18-19; UG-570 Rev.A pp.120,124"
+			(at 157.4800 207.0100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "G2 G3"
+			(at 157.4800 207.0100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "245ce422-b51a-4a53-9f50-84796d6d35ff")
+		)
+		(pin "2"
+			(uuid "2dd8b0fa-c7b0-4422-a41a-0136483bc4c1")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 157.4800 198.1200)
+			(xy 157.4800 203.2000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f411a204-d378-4300-a9aa-cbcf8932d9bf")
+	)
+	(wire
+		(pts
+			(xy 157.4800 210.8200)
+			(xy 157.4800 226.0600)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cd302cd-0949-40de-b32e-e5c3cd8b3a7e")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 157.4800 226.0600 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f617a95-8ecd-4652-a389-2aeb71a36ce4")
+		(property "Reference" "#PWR015"
+			(at 160.0200 224.7900 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.0200 227.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.4800 226.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 157.4800 226.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 157.4800 226.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "75395473-922f-4c02-85cb-d8104397cfe8")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 157.4800 198.1200)
+			(xy 193.0400 198.1200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9eb0e5e-ec00-42dc-b247-b4d1727d2a28")
+	)
+	(junction
+		(at 157.4800 198.1200)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee37966c-d7f3-402a-9dc1-1e173c3eb1c3")
+	)
+	(symbol
+		(lib_id "mesh_radio:R")
+		(at 193.0400 203.2000 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "50bb529b-c509-446e-ba39-5a56e036de55")
+		(property "Reference" "R3"
+			(at 195.5800 201.9300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1R"
+			(at 195.5800 204.4700 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.0400 203.2000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet2 C116/R124/C117; DS Rev.G pp.18-19; UG-570 Rev.A pp.120,124"
+			(at 193.0400 203.2000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "G2 G3"
+			(at 193.0400 203.2000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "013bc291-e722-4da8-b68a-17dfea28423d")
+		)
+		(pin "2"
+			(uuid "bedbd427-f46f-4e65-9a91-037444d7c968")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 193.0400 198.1200)
+			(xy 193.0400 199.3900)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10e5912c-95dd-4847-b2f4-0b9b0a93092c")
+	)
+	(symbol
+		(lib_id "mesh_radio:C")
+		(at 193.0400 217.1700 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "07bdb2ae-c1be-41f8-8463-f572392b969f")
+		(property "Reference" "C41"
+			(at 195.5800 215.9000 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 195.5800 218.4400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.0400 217.1700 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 Rev.A sheet2 C116/R124/C117; DS Rev.G pp.18-19; UG-570 Rev.A pp.120,124"
+			(at 193.0400 217.1700 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "G2 G3"
+			(at 193.0400 217.1700 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46e82173-221a-4304-b51b-6aa11ba03bd9")
+		)
+		(pin "2"
+			(uuid "5a631483-6a81-4a38-a409-77c8b4a98eef")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 193.0400 207.0100)
+			(xy 193.0400 213.3600)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4bf5005-93c6-4ff1-aefd-2966c20b1249")
+	)
+	(wire
+		(pts
+			(xy 193.0400 220.9800)
+			(xy 193.0400 226.0600)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7e74391-5b43-44a0-a00c-e0da2e611c6f")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 193.0400 226.0600 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "77d191d8-6e35-4781-a9f0-4c313d936a78")
+		(property "Reference" "#PWR016"
+			(at 195.5800 224.7900 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 195.5800 227.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.0400 226.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 193.0400 226.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 193.0400 226.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f61240df-bddc-4691-833d-e0e83b33f792")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/944f3633-4327-47d9-84c8-a65a9aff7f53"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "VCO bypass follows the specific LDO network.\nDo not add a large undamped capacitor.\n100n per external power input: UG-570 p.120.\n10u at J3/K3: UG-570 p.120 (addition to Rev.A ref)."
+		(at 274.3200 190.5000 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left)
+		)
+		(uuid "1113c9cd-028a-40fe-8a29-daebfbf0d2fc")
+	)
+	(text "External sources are not implemented. Each 1V3 branch requires 1.3 V; connect at the future supply origin.\nVDD_GPO must rise at least as fast as 1.3 V (UG-570 Rev.A p.120). VDD_INTERFACE must match FPGA I/O.\nCapacitor MPN, effective capacitance, ratings and footprints require selection. Place local bypass at the indicated balls.\nSources: AD9361 Rev.G Table13 pp.18-21; UG-570 Rev.A pp.120,124; FMCOMMS3 Rev.A sheets2,4."
+		(at 20.3200 251.4600 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "4e4c0071-30b3-42d7-a20d-44d6a84232bb")
+	)
+)

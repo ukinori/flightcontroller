@@ -1,0 +1,4 @@
+(sym_lib_table
+ (version 7)
+ (lib (name "mesh_radio") (type "KiCad") (uri "${KIPRJMOD}/mesh_radio.kicad_sym") (options "") (descr "AD9361BBCZ; datasheet Rev. G pinout"))
+)

@@ -1,0 +1,2087 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(uuid "b259b14e-032f-4436-ba91-636f9c868c5f")
+	(paper "A3")
+	(lib_symbols
+		(symbol "mesh_radio:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mesh_radio:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mesh_radio:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 -1.27)
+						(xy 1.27 -1.27)
+						(xy 0 -2.54)
+						(xy -1.27 -1.27)
+						(xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mesh_radio:Crystal_GND24"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Y"
+				(at 3.175 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Crystal_GND24"
+				(at 3.175 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Four pin crystal, GND on pins 2 and 4"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S3.3" "The rectangle is not a symbol body but a graphical element"
+				(at 0 -12.7 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S4.1" "Some pins are on 50mil grid to make the symbol small"
+				(at 0 -15.24 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Crystal_GND24_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.286)
+						(xy -2.54 3.556)
+						(xy 2.54 3.556)
+						(xy 2.54 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0)
+						(xy -2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.286)
+						(xy -2.54 -3.556)
+						(xy 2.54 -3.556)
+						(xy 2.54 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -1.27)
+						(xy -2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.143 2.54)
+					(end 1.143 -2.54)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.81)
+						(xy 0 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 0)
+						(xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -1.27)
+						(xy 2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Crystal_GND24_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(hide yes)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "AD9361 CLOCK / CONTROL - standalone Zynq board"
+		(at 20.3200 16.51 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "97b3354d-fe6b-4f88-9936-db484c7cbc8b")
+	)
+	(text "1.8 V interface requirement; Zynq device, bank and pins TBD. No FMC connector."
+		(at 20.3200 20.3200 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a344e564-08cb-42bc-bd5d-3c81cc8147e6")
+	)
+	(symbol
+		(lib_id "mesh_radio:Crystal_GND24")
+		(at 76.2000 53.3400 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6bbca07-8077-48c7-a6b0-2121f7bc1bfe")
+		(property "Reference" "Y1"
+			(at 83.82 45.72 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "40MHz CL10pF - MPN TBD"
+			(at 83.82 63.5 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2000 53.3400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 02_037515 Rev.A sheet2 Y101; UG-570 Rev.A p.14"
+			(at 76.2000 53.3400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "M11/M12"
+			(at 76.2000 53.3400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b66dc920-f371-4389-9b28-cc5ae838e0cf")
+		)
+		(pin "2"
+			(uuid "2774a51f-745a-4414-80cb-2b59ace92296")
+		)
+		(pin "3"
+			(uuid "6796eb09-d165-47f5-a7f6-73b5268b88ea")
+		)
+		(pin "4"
+			(uuid "8c839553-ccab-4c0c-8562-ba59d5ea8511")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/45313953-cdfc-48fc-a526-33b1af5fffdf"
+					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 50.8000 53.3400)
+			(xy 72.3900 53.3400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5466518-437d-4f8d-8629-364752fea871")
+	)
+	(global_label "AD9361_XTALN"
+		(shape input)
+		(at 50.8000 53.3400 180)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right)
+		)
+		(uuid "01d57eac-c7cb-4281-a834-8b57fdc23ff0")
+	)
+	(wire
+		(pts
+			(xy 80.0100 53.3400)
+			(xy 106.6800 53.3400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ffd0f6f-0639-4e70-b1f7-927a9be03819")
+	)
+	(global_label "AD9361_XTALP"
+		(shape input)
+		(at 106.6800 53.3400 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "f83737de-8705-4223-a0e3-ec5e00298461")
+	)
+	(wire
+		(pts
+			(xy 76.2000 58.4200)
+			(xy 76.2000 66.0400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ab836b2-e4ec-4590-9a76-b787f0063843")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 76.2000 66.0400 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "514c5595-8193-415f-8ea3-c453ed982183")
+		(property "Reference" "#PWR101"
+			(at 78.7400 64.7700 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 78.7400 67.3100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2000 66.0400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 76.2000 66.0400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 76.2000 66.0400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "728ee751-626f-42ea-8784-b2b12b2e3007")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/45313953-cdfc-48fc-a526-33b1af5fffdf"
+					(reference "#PWR101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "Passive AT-cut fundamental crystal + internal DCXO. No supply pin.\nInternal load tuning: no external load capacitors fitted.\n40 MHz is within the 19-50 MHz crystal range.\nMPN, ESR, drive rating, tolerance and footprint remain TBD.\nPlace beside U1; short symmetric traces; calibrate DCXO."
+		(at 190.5000 50.8000 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1c3b19d9-4763-4382-8cab-36484d09e4c4")
+	)
+	(symbol
+		(lib_id "mesh_radio:R")
+		(at 76.2000 99.0600 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "96c80dd6-a5d8-4a76-ab2c-3661dccd09af")
+		(property "Reference" "R5"
+			(at 78.7400 97.7900 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "49.9R"
+			(at 78.7400 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2000 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 02_037515 Rev.A sheet3 R225"
+			(at 76.2000 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "Future Zynq SPI clock driver"
+			(at 76.2000 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e472792-600d-4b67-bc15-010730eba49e")
+		)
+		(pin "2"
+			(uuid "085a20ce-aee2-49e3-9cfe-c8ffb5c26dd1")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/45313953-cdfc-48fc-a526-33b1af5fffdf"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2000 88.9000)
+			(xy 76.2000 95.2500)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0cf7795-d781-4258-84e4-e7ae8d50236d")
+	)
+	(global_label "ZYNQ_AD9361_SPI_CLK_1V8"
+		(shape input)
+		(at 76.2000 88.9000 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "da07fd4e-607d-411d-8d69-dd7df7aef903")
+	)
+	(wire
+		(pts
+			(xy 76.2000 102.8700)
+			(xy 76.2000 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f15a178c-2227-4894-867c-92eed620fc4d")
+	)
+	(global_label "AD9361_SPI_CLK_1V8"
+		(shape input)
+		(at 76.2000 109.2200 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "52bc1451-4836-400e-a790-ad02bf53ed3a")
+	)
+	(symbol
+		(lib_id "mesh_radio:R")
+		(at 190.5000 99.0600 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1cfd5689-a429-4383-b8c6-dca75e9fac41")
+		(property "Reference" "R6"
+			(at 193.0400 97.7900 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 193.0400 100.3300 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5000 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 02_037515 Rev.A sheet3 R226"
+			(at 190.5000 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "K6"
+			(at 190.5000 99.0600 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8db0868b-7a93-4b38-b49e-99f25748af4e")
+		)
+		(pin "2"
+			(uuid "0c53662c-b08b-401d-9886-1648db9528e4")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/45313953-cdfc-48fc-a526-33b1af5fffdf"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 190.5000 88.9000)
+			(xy 190.5000 95.2500)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eecfae79-270e-4cba-b206-29957c86f606")
+	)
+	(global_label "AD9361_VDD_INTERFACE_1V8"
+		(shape input)
+		(at 190.5000 88.9000 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "d46177d2-dd8d-4a87-9d1a-278b7311bd65")
+	)
+	(wire
+		(pts
+			(xy 190.5000 102.8700)
+			(xy 190.5000 109.2200)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37c3d1a7-d015-4422-9354-e21dfa0974b2")
+	)
+	(global_label "AD9361_SPI_CSB_1V8"
+		(shape input)
+		(at 190.5000 109.2200 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "9cfbda9c-ec2f-4490-bf16-07f911262148")
+	)
+	(text "4-wire SPI: MOSI -> J4; MISO <- L6; CLK -> J5; CSB -> K6.\nRESETB -> K5; R4 10k pull-up is on Radio sheet 4.\nSPI maximum 50 MHz; timing: UG-570 Rev.A pp.113-115.\nFuture controller must drive RESETB; a pull-up is not a reset supervisor."
+		(at 20.3200 132.0800 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8e1571db-c983-46e0-9781-6ee0aa886abb")
+	)
+	(text "Unassigned Zynq logical nets (all 1.8 V):\nAD9361_SPI_MOSI_1V8 / AD9361_SPI_MISO_1V8\nAD9361_SPI_CSB_1V8 / ZYNQ_AD9361_SPI_CLK_1V8\nAD9361_RESETB_1V8 / AD9361_ENABLE_1V8\nAD9361_TXNRX_1V8 / AD9361_EN_AGC_1V8\nNo FPGA package pins have been invented."
+		(at 218.4400 137.1600 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "36d04f72-efb6-41fd-8a33-501b69f2ea87")
+	)
+	(symbol
+		(lib_id "mesh_radio:R")
+		(at 40.6400 195.5800 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3e0ec2cb-c528-4e97-82bb-1baeb7efe3b7")
+		(property "Reference" "R7"
+			(at 43.1800 194.3100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 43.1800 196.8500 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.6400 195.5800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 02_037515 Rev.A sheet2 R111"
+			(at 40.6400 195.5800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "SYNC_IN"
+			(at 40.6400 195.5800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "682eec31-be80-4628-bedf-2bcb753016b2")
+		)
+		(pin "2"
+			(uuid "f6f2c08d-68a3-4bb9-9ec4-942fbb0eb2ea")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/45313953-cdfc-48fc-a526-33b1af5fffdf"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 40.6400 185.4200)
+			(xy 40.6400 191.7700)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6f28fb3-22a9-4dc1-adf4-0b5e738046fd")
+	)
+	(global_label "AD9361_SYNC_IN_1V8"
+		(shape input)
+		(at 40.6400 185.4200 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "40712579-e99c-4ad5-840e-294d8f55e1ec")
+	)
+	(wire
+		(pts
+			(xy 40.6400 199.3900)
+			(xy 40.6400 205.7400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b421d02d-1701-46dd-b0cd-b6fe23de42c3")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 40.6400 205.7400 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "e5d8c1af-e80d-432c-9540-63967189384f")
+		(property "Reference" "#PWR102"
+			(at 43.1800 204.4700 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 43.1800 207.0100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.6400 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 40.6400 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 40.6400 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "213a43ad-7a09-4729-8adb-b66051e9f981")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/45313953-cdfc-48fc-a526-33b1af5fffdf"
+					(reference "#PWR102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mesh_radio:R")
+		(at 114.3000 195.5800 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b2758a85-a283-4c4a-b3ef-c659005b3449")
+		(property "Reference" "R8"
+			(at 116.8400 194.3100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 116.8400 196.8500 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3000 195.5800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 02_037515 Rev.A sheet3 R201-R204"
+			(at 114.3000 195.5800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "CTRL_IN0"
+			(at 114.3000 195.5800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "283de914-6e01-47d2-81cc-a5ca4f6f57f2")
+		)
+		(pin "2"
+			(uuid "08a74511-1afc-4f7f-a663-56fe14868c64")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/45313953-cdfc-48fc-a526-33b1af5fffdf"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 114.3000 185.4200)
+			(xy 114.3000 191.7700)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42f65226-eb51-4ed9-8bc2-23952525c246")
+	)
+	(global_label "AD9361_CTRL_IN0_1V8"
+		(shape input)
+		(at 114.3000 185.4200 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "29de936c-b9a0-4e5b-bb2f-04a41f760096")
+	)
+	(wire
+		(pts
+			(xy 114.3000 199.3900)
+			(xy 114.3000 205.7400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1e3a73e-83cd-4f9e-acda-ce0591587289")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 114.3000 205.7400 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "41f26b3e-b403-43eb-8421-be20ee7a4401")
+		(property "Reference" "#PWR103"
+			(at 116.8400 204.4700 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 116.8400 207.0100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3000 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 114.3000 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 114.3000 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e869cb6a-2784-48d7-af6e-c0a18dac32d3")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/45313953-cdfc-48fc-a526-33b1af5fffdf"
+					(reference "#PWR103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mesh_radio:R")
+		(at 187.9600 195.5800 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3cb1237c-e486-4190-b216-7d84a693a603")
+		(property "Reference" "R9"
+			(at 190.5000 194.3100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 190.5000 196.8500 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.9600 195.5800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 02_037515 Rev.A sheet3 R201-R204"
+			(at 187.9600 195.5800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "CTRL_IN1"
+			(at 187.9600 195.5800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d01c971-08f1-4560-9aee-57032f8f2aee")
+		)
+		(pin "2"
+			(uuid "201e643b-c6fa-4dcd-932a-c257d86e377d")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/45313953-cdfc-48fc-a526-33b1af5fffdf"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 187.9600 185.4200)
+			(xy 187.9600 191.7700)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9411576b-0d5d-4793-b3dd-dcde0787abaf")
+	)
+	(global_label "AD9361_CTRL_IN1_1V8"
+		(shape input)
+		(at 187.9600 185.4200 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "f1c99985-3831-4a5e-95d0-5ab2d33d1c15")
+	)
+	(wire
+		(pts
+			(xy 187.9600 199.3900)
+			(xy 187.9600 205.7400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "061d0d8a-dea3-4139-ba00-73c4cf6d42f4")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 187.9600 205.7400 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "880b0ef9-1f85-495c-804c-0b68b8ff29be")
+		(property "Reference" "#PWR104"
+			(at 190.5000 204.4700 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5000 207.0100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.9600 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 187.9600 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 187.9600 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a3183c7-f84a-427e-a328-ee6650f72a93")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/45313953-cdfc-48fc-a526-33b1af5fffdf"
+					(reference "#PWR104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mesh_radio:R")
+		(at 261.6200 195.5800 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "93fb44ff-f348-42bb-ac6b-7e4df18b1e9a")
+		(property "Reference" "R10"
+			(at 264.1600 194.3100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 264.1600 196.8500 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.6200 195.5800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 02_037515 Rev.A sheet3 R201-R204"
+			(at 261.6200 195.5800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "CTRL_IN2"
+			(at 261.6200 195.5800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "26aa9e82-2a7d-4fe5-b5a8-b3c787c8d95e")
+		)
+		(pin "2"
+			(uuid "cd33140c-6ba9-4d55-8c64-3013700b11cb")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/45313953-cdfc-48fc-a526-33b1af5fffdf"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 261.6200 185.4200)
+			(xy 261.6200 191.7700)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "683c883d-60e0-4863-b8c6-e94ef6f781a3")
+	)
+	(global_label "AD9361_CTRL_IN2_1V8"
+		(shape input)
+		(at 261.6200 185.4200 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "814038d0-43ef-4272-8114-7b50e7e695e2")
+	)
+	(wire
+		(pts
+			(xy 261.6200 199.3900)
+			(xy 261.6200 205.7400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb614a7b-64c3-4b6d-9106-dc0652639169")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 261.6200 205.7400 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "79476b43-9cee-4e47-a7d9-b22e40f6cc3b")
+		(property "Reference" "#PWR105"
+			(at 264.1600 204.4700 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 264.1600 207.0100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.6200 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 261.6200 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 261.6200 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14061004-986d-4a9a-9a5a-4b5b1f29bed7")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/45313953-cdfc-48fc-a526-33b1af5fffdf"
+					(reference "#PWR105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mesh_radio:R")
+		(at 335.2800 195.5800 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a1ec8fb1-78e2-4673-a782-475fed9bfed8")
+		(property "Reference" "R11"
+			(at 337.8200 194.3100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 337.8200 196.8500 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.2800 195.5800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" "FMCOMMS3 02_037515 Rev.A sheet3 R201-R204"
+			(at 335.2800 195.5800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" "CTRL_IN3"
+			(at 335.2800 195.5800 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bc1b9a6c-02b1-4663-bc1d-787bc4c1cfed")
+		)
+		(pin "2"
+			(uuid "477abdfc-4db9-417a-8401-a7e80f5d0f40")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/45313953-cdfc-48fc-a526-33b1af5fffdf"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 335.2800 185.4200)
+			(xy 335.2800 191.7700)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4efdf9f-607c-44ae-b11f-816f2f9f672a")
+	)
+	(global_label "AD9361_CTRL_IN3_1V8"
+		(shape input)
+		(at 335.2800 185.4200 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "8a6d5f1f-3be7-4aaa-aff7-c1f493f1a4d2")
+	)
+	(wire
+		(pts
+			(xy 335.2800 199.3900)
+			(xy 335.2800 205.7400)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f85480a-0864-4f95-a154-1b624e5878b4")
+	)
+	(symbol
+		(lib_id "mesh_radio:GND")
+		(at 335.2800 205.7400 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "53e8110e-ba5f-4d99-9eb1-b5e352e78c3a")
+		(property "Reference" "#PWR106"
+			(at 337.8200 204.4700 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 337.8200 207.0100 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.2800 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Source" ""
+			(at 335.2800 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Place_near" ""
+			(at 335.2800 205.7400 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "679cdb09-1326-4043-af39-40f4702c0a75")
+		)
+		(instances
+			(project "meshtransciever"
+				(path "/db0fd193-4a0c-4799-9079-b584faa063d7/aab4d82b-bad5-45f4-aefe-cf91f87fe3fb/45313953-cdfc-48fc-a526-33b1af5fffdf"
+					(reference "#PWR106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "SYNC_IN defaults low; CTRL_IN[3:0] have reference pull-downs. Optional future 1.8 V control.\nENABLE / TXNRX / EN_AGC host drivers and startup behavior remain TBD; select ENSM mode in firmware.\nCMOS thresholds at 1.8 V: VIH >= 1.44 V; VIL <= 0.36 V (AD9361 Rev.G p.7).\nExternal power sources and Zynq are not implemented. Global labels are logical nets, not drivers.\nCrystal circuit: FMCOMMS3 Rev.A sheet2; digital pulls / termination: sheet3. Not production ready."
+		(at 20.3200 238.7600 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "651fe0a3-b40c-4d8b-8825-3e0c4bd47243")
+	)
+)
