@@ -10,9 +10,13 @@ This guide is entirely in English. Its legacy filename is retained for existing 
 4. Keep untitled.kicad_sch: it is the required MCU sheet.
 5. Install the standard KiCad libraries. Project-specific libraries are bundled beside the project using ${KIPRJMOD} paths.
 
+## View the board in 3D
+
+In PCB Editor, press Alt+3. The current rendered preview is [images/flightcontroller-3d.png](../images/flightcontroller-3d.png). Keep the bundled models/ folder beside the project. Sensor envelopes and the generic crystal are visual aids rather than qualified mechanical models.
+
 ## Inspect the PCB
 
-1. Review the main README for connector pinouts and output/GPIO/resistor mapping.
+1. Review the main README and [JST-GH wiring guide](../README-JST-GH.md) for current connector pinouts and output/GPIO/resistor mapping.
 2. Enable one copper layer at a time in PCB Editor's Appearance panel.
 3. F.Cu contains components, routing and GND/VCC_SERVO pours.
 4. In1.Cu is the GND plane without ordinary routed tracks.
@@ -34,7 +38,7 @@ A copper zone belongs to one net. Vias connect copper on different layers. Diffe
 
 ## Verification scope
 
-The 2026-10-21 flight-controller publication snapshot reports zero ERC violations, physical DRC violations, unconnected items and schematic/PCB parity issues under the existing project settings. Reports are in verification/. Ignored checks are listed in the main README and JSON reports. Earlier U8/L1 parity warnings were not reproduced.
+The 2026-10-22 JST-GH flight-controller publication snapshot reports zero ERC violations, physical DRC violations, unconnected items and schematic/PCB parity issues under the existing project settings. Reports are in verification/. Ignored checks are listed in the main README and JSON reports. Earlier U8/L1 parity warnings were not reproduced.
 
 These results do not establish electrical operation, current rating, fabrication compliance or flight safety. The separate meshtransciever project is unfinished; its PCB is a placeholder and is outside this verification scope.
 

@@ -1,0 +1,32 @@
+{
+  "source_board_sha256": "7b74f80e9d5fe5353e8f592cf89578a71297afb6431f88341366c7511a0191b4",
+  "model_substitutions": [
+    {
+      "ref": "U2",
+      "model": "${KIPRJMOD}/models/ICM42688-envelope.step",
+      "kind": "nominal envelope"
+    },
+    {
+      "ref": "U6",
+      "model": "${KIPRJMOD}/models/BMP390-envelope.step",
+      "kind": "nominal envelope"
+    },
+    {
+      "ref": "U3",
+      "model": "${KIPRJMOD}/models/ICM42688-envelope.step",
+      "kind": "nominal envelope"
+    },
+    {
+      "ref": "Y1",
+      "model": "${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_5032-2Pin_5.0x3.2mm.step",
+      "kind": "generic 5032 crystal"
+    },
+    {
+      "ref": "U7",
+      "model": "${KIPRJMOD}/models/BMP390-envelope.step",
+      "kind": "nominal envelope"
+    }
+  ],
+  "electrical_geometry_modified": false,
+  "source": "JST-GH board revision"
+}

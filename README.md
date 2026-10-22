@@ -6,7 +6,9 @@ Custom four-layer flight-controller hardware for VTOL and fixed-wing aircraft, d
 
 [Hardware inspection guide](docs/PROJECT-RU.md) · [Board review and bring-up checklist](docs/PROJECT-RU.md#before-fabrication-and-bring-up)
 
-![Top-side component placement](placement-preview.png)
+![3D view of the JST-GH board revision](images/flightcontroller-3d.png)
+
+Current KiCad 3D rendering. Sensor bodies include nominal package envelopes; see [3D model notes](3d-model-notes.json).
 
 ## Hardware
 
@@ -28,7 +30,8 @@ Exact component references, values, connections and footprints are defined by th
 2. Open **flightcontroller.kicad_pro** in KiCad 10.
 3. Open **flightcontroller.kicad_sch** for the schematic hierarchy and **flightcontroller.kicad_pcb** for the routed board.
 4. Install the standard KiCad symbol and footprint libraries. Project-specific libraries are bundled in **FlightController.kicad_sym** and **FlightController.pretty/** and use `${KIPRJMOD}` paths.
-5. Refill copper zones and rerun ERC/DRC after making changes.
+5. In PCB Editor, press **Alt+3** to open the 3D Viewer. Keep `models/` beside the project and install the standard KiCad 3D model libraries.
+6. Refill copper zones and rerun ERC/DRC after making changes.
 
 The root schematic contains MCU, power and interface sheets. The MCU sheet is currently named **untitled.kicad_sch**; this file is required by the hierarchy.
 
@@ -63,12 +66,17 @@ The intended allocation is OUT1–OUT5 for five DShot ESCs, OUT7–OUT11 for fiv
 
 ## Other connectors
 
-- **J1 SWD:** pin 1 SWDIO, pin 2 SWCLK, pin 3 NRST, pin 4 3.3 V reference, pin 5 GND.
-- **J18 GPS:** pin 1 +5V, pin 2 controller TX, pin 3 controller RX, pin 4 GND.
-- **J19 telemetry:** pin 1 +5V, pin 2 controller TX, pin 3 controller RX, pin 4 GND.
-- **J17 RC UART:** pin 1 +5V, pin 2 controller TX, pin 3 controller RX, pin 4 GND.
-- **J20/J21 external I2C:** pin 1 +3.3V, pin 2 SCL, pin 3 SDA, pin 4 GND.
-- **J23 sensing:** pin 1 battery-voltage sensing input, pin 2 external 0–3.3 V current-sense signal, pin 3 GND. Confirm the divider range against the actual battery and component ratings before connecting it.
+See the [JST-GH wiring guide](README-JST-GH.md) and [connector BOM](JST-GH-CONNECTORS.csv) before making cables.
+
+- **J1 SWD (custom 5-pin GH):** pin 1 SWDIO, pin 2 SWCLK, pin 3 NRST, pin 4 3.3 V reference, pin 5 GND.
+- **J18 GPS (6-pin GH, Pixhawk GPS2 signal order):** pin 1 +5V, pin 2 controller TX, pin 3 controller RX, pin 4 SCL, pin 5 SDA, pin 6 GND.
+- **J19 telemetry (6-pin GH):** pin 1 +5V, pin 2 controller TX, pin 3 controller RX, pins 4/5 unconnected, pin 6 GND. Hardware RTS/CTS flow control is unavailable.
+- **J17 RC UART (6-pin GH):** pin 1 +5V, pin 2 controller TX, pin 3 controller RX, pins 4/5 unconnected, pin 6 GND. Hardware RTS/CTS flow control is unavailable.
+- **J20/J21 external I2C (4-pin GH):** pin 1 **+5V power**, pin 2 SCL, pin 3 SDA, pin 4 GND. Pull-ups and logic remain at 3.3 V. These ports and GPS share the external I2C4 bus.
+- **J24 buzzer (2-pin GH):** pin 1 +5V, pin 2 switched buzzer return; intended active buzzer limit 20 mA.
+- **J23 sensing (original header retained):** pin 1 battery-voltage sensing input, pin 2 external 0–3.3 V current-sense signal, pin 3 GND. Confirm the divider range against the actual battery and component ratings before connecting it.
+
+J4, J22, OUT1–OUT12, USB-C and microSD remain unchanged. J23 remains a power-measurement exception because the GH voltage rating is 50 V, below a fully charged 12S pack at 50.4 V. RC and SWD retain custom pinouts and are not interchangeable with Pixhawk RC/debug cables.
 
 TX/RX names refer to the controller. Check the external device's voltage levels and cable pinout; matching connector size does not establish compatibility.
 
@@ -81,7 +89,7 @@ TX/RX names refer to the controller. Check the external device's voltage levels 
 
 Review the final manufacturer's stack-up, signal return paths, USB/SDMMC routing, converter layout and servo-current distribution before fabrication. Current design minima include 0.15 mm tracks/clearances and 0.20 mm via drills; these require manufacturer confirmation.
 
-## Verification snapshot — 2026-10-21
+## Verification snapshot — 2026-10-22
 
 KiCad CLI 10.0.4 checks on the publication snapshot:
 
@@ -92,18 +100,21 @@ KiCad CLI 10.0.4 checks on the publication snapshot:
 
 The existing project settings ignore some checks. DRC ignores `missing_courtyard`, `track_not_centered_on_via`, `tuning_profile_track_geometries`, `footprint_filters_mismatch` and `footprint_type_mismatch`. ERC ignores `single_global_label`, `four_way_junction`, `simulation_model_issue` and `footprint_filter`. The JSON reports retain this information. Zero findings apply to this configured check set.
 
-Current reports are in **verification/**. Older reports and routing notes in the root directory are retained as historical records; the three U8/L1 parity warnings described in the older notes were not reproduced in the 2026-10-21 snapshot.
+Current JST-GH revision reports are `verification/ERC-2026-10-22.json` and `verification/DRC-2026-10-22.json`. All 480 schematic pin assignments match the board; the 125 unchanged footprints retain their positions. No check severities were relaxed for this revision. Older reports, images and routing notes are retained as historical records.
 
 ## Repository contents
 
 - Root KiCad files — flight-controller schematic, PCB and project settings.
 - `FlightController.pretty/`, `FlightController.kicad_sym` — project-local CAD libraries.
 - CSV/Markdown files — component-selection records, footprint assignments and engineering notes.
-- `verification/` — fresh ERC and DRC reports for this publication snapshot.
+- `verification/` — ERC, DRC and net-assignment checks, with dated historical reports.
+- `images/flightcontroller-3d.png` — current board rendering.
+- `models/` — nominal ICM42688 and BMP390 package envelopes used by KiCad 3D Viewer.
+- `README-JST-GH.md`, `JST-GH-CONNECTORS.csv` — current port wiring and connector parts.
 - `docs/PROJECT-RU.md` — English hardware inspection and bring-up guide. Legacy filenames containing `RU` are retained for existing links; all current documentation is in English.
 - `meshtransciever/` — a separate, unfinished radio/mesh hardware project included from the source folder. Its PCB is a placeholder; it is not part of the flight-controller verification results.
 
-Editor history, restore backups, lock files and machine-specific UI state are excluded. The publication copy replaces the root machine-specific symbol-library table with a project-relative table; the working CAD source folder is unchanged.
+Editor history, restore backups, lock files and machine-specific UI state are excluded. The published project uses a portable symbol-library table with project-relative paths.
 
 ## Remaining work
 

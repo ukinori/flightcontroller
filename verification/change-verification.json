@@ -1,0 +1,76 @@
+{
+  "changed_pin_assignments": [
+    {
+      "ref": "J17",
+      "pin": "5",
+      "before": null,
+      "after": "unconnected-(J17-Pin_5-Pad5)"
+    },
+    {
+      "ref": "J19",
+      "pin": "5",
+      "before": null,
+      "after": "unconnected-(J19-Pin_5-Pad5)"
+    },
+    {
+      "ref": "J17",
+      "pin": "6",
+      "before": null,
+      "after": "GND"
+    },
+    {
+      "ref": "J21",
+      "pin": "1",
+      "before": "+3.3V",
+      "after": "+5V"
+    },
+    {
+      "ref": "J19",
+      "pin": "4",
+      "before": "GND",
+      "after": "unconnected-(J19-Pin_4-Pad4)"
+    },
+    {
+      "ref": "J18",
+      "pin": "4",
+      "before": "GND",
+      "after": "EXT_I2C_SCL"
+    },
+    {
+      "ref": "J18",
+      "pin": "5",
+      "before": null,
+      "after": "EXT_I2C_SDA"
+    },
+    {
+      "ref": "J19",
+      "pin": "6",
+      "before": null,
+      "after": "GND"
+    },
+    {
+      "ref": "J20",
+      "pin": "1",
+      "before": "+3.3V",
+      "after": "+5V"
+    },
+    {
+      "ref": "J18",
+      "pin": "6",
+      "before": null,
+      "after": "GND"
+    },
+    {
+      "ref": "J17",
+      "pin": "4",
+      "before": "GND",
+      "after": "unconnected-(J17-Pin_4-Pad4)"
+    }
+  ],
+  "unexpected_pin_changes": [],
+  "unchanged_component_positions": 125,
+  "unexpected_component_moves": [],
+  "design_rules_preserved": true,
+  "rule_severities_preserved": true,
+  "source_board_sha256": "0851333d92bb403b6bee3f73c9fc3c392072e4a7a3a1488b0bb7b6a3848db0fc"
+}

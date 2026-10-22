@@ -1,4 +1,4 @@
-﻿Reference,Value,Footprint,Status
+Reference,Value,Footprint,Status
 C1,4mu7,Capacitor_SMD:C_0805_2012Metric,Assigned; component MPN still required
 C10,100n,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
 C11,1mu,Capacitor_SMD:C_0603_1608Metric,Assigned; component MPN still required
@@ -48,7 +48,7 @@ D5,POWER_GREEN,LED_SMD:LED_0603_1608Metric,Assigned; component MPN still require
 D6,STATUS_GREEN,LED_SMD:LED_0603_1608Metric,Assigned; component MPN still required
 D7,1N4148W,Diode_SMD:D_SOD-123,Assigned; component MPN still required
 FB1,FerriteBead,Inductor_SMD:L_0603_1608Metric,Assigned
-J1,Conn_01x05_Pin,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,Assigned; component MPN still required
+J1,SWD_CUSTOM_GH5,Connector_JST:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal,JST SM05B-GHS-TB; GHR-05V-S housing; verify mating cable
 J10,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
 J11,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
 J12,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
@@ -56,15 +56,15 @@ J13,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assign
 J14,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
 J15,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
 J16,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
-J17,RC_USART2_3V3_LOGIC,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Assigned; component MPN still required
-J18,GPS,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Assigned; component MPN still required
-J19,TELEMETRY,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Assigned; component MPN still required
+J17,RC_UART_GH6_NO_FLOW,Connector_JST:JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal,JST SM06B-GHS-TB; GHR-06V-S housing; verify mating cable
+J18,GPS_PIXHAWK_GPS2,Connector_JST:JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal,JST SM06B-GHS-TB; GHR-06V-S housing; verify mating cable
+J19,TELEM_GH6_NO_FLOW,Connector_JST:JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal,JST SM06B-GHS-TB; GHR-06V-S housing; verify mating cable
 J2,USB_C_Receptacle_USB2.0_14P,Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,"Assigned; unused footprint pads A8,B8"
-J20,COMPASS_I2C4_3V3,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Assigned; component MPN still required
-J21,AIRSPEED_I2C4_3V3,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Assigned; component MPN still required
+J20,COMPASS_I2C4_5V,Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal,JST SM04B-GHS-TB; GHR-04V-S housing; verify mating cable
+J21,AIRSPEED_I2C4_5V,Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal,JST SM04B-GHS-TB; GHR-04V-S housing; verify mating cable
 J22,SERVO_BEC_INPUT,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Assigned; component MPN still required
 J23,BATTERY_SENSE_ONLY,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
-J24,ACTIVE_BUZZER_5V_20mA_MAX,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Assigned; component MPN still required
+J24,BUZZER_5V_20mA_MAX,Connector_JST:JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal,JST SM02B-GHS-TB; GHR-02V-S housing; verify mating cable
 J3,Micro_SD_Card,Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5,"Assigned; unused footprint pads 10,9"
 J4,5V_REGULATED_INPUT,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Assigned; component MPN still required
 J5,Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Assigned; component MPN still required
